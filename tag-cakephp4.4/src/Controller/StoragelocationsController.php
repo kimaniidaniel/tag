@@ -22,7 +22,7 @@ class StoragelocationsController extends AppController
             'contain' => ['Users'],
         ];
         $storagelocations = $this->paginate($this->Storagelocations);
-
+        
         $this->set(compact('storagelocations'));
     }
 
@@ -60,6 +60,11 @@ class StoragelocationsController extends AppController
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
         }
         $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
+        $users = $this->Storagelocations->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
+            return [
+                'value' => $value->id, 'text' => $value->first_name . ' ' . $value->last_name
+            ];
+        });
         $this->set(compact('storagelocation', 'users'));
     }
 

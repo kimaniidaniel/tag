@@ -60,14 +60,13 @@ class InventoryController extends AppController
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
         }
         $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
-        $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
+        // $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
         $users = $this->Inventory->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
             return [
                 'value' => $value->id, 'text' => $value->first_name . ' ' . $value->last_name
             ];
         });
-        debug($storageunits->toArray());
-        debug($users->toArray());
+
         $this->set(compact('inventory', 'storageunits', 'users'));
     }
 
