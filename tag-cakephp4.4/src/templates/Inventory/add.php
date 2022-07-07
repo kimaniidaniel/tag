@@ -2,6 +2,8 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Inventory $inventory
+ * @var \Cake\Collection\CollectionInterface|string[] $storageunits
+ * @var \Cake\Collection\CollectionInterface|string[] $users
  */
 ?>
 <div class="row">
@@ -17,13 +19,14 @@
             <fieldset>
                 <legend><?= __('Add Inventory') ?></legend>
                 <?php
-                    echo $this->Form->control('StorageUnitID');
-                    echo $this->Form->control('UserID');
-                    echo $this->Form->control('Description');
-                    echo $this->Form->control('Number_of_Items');
-                    echo $this->Form->control('Arrival_Date');
-                    echo $this->Form->control('Departure_Date');
-                    echo $this->Form->control('Updated_at');
+                    echo $this->Form->control('name');
+                    echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
+                    echo $this->Form->control('user_id', ['options' => $users]);
+                    echo $this->Form->control('description');
+                    echo $this->Form->control('number_of_items');
+                    echo $this->Form->control('arival_date');
+                    echo $this->Form->control('departure_date');
+                    echo $this->Form->control('updated_at');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

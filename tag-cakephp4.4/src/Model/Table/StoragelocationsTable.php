@@ -9,7 +9,10 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Storagelocation Model
+ * Storagelocations Model
+ *
+ * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\StorageunitsTable&\Cake\ORM\Association\HasMany $Storageunits
  *
  * @method \App\Model\Entity\Storagelocation newEmptyEntity()
  * @method \App\Model\Entity\Storagelocation newEntity(array $data, array $options = [])
@@ -25,7 +28,7 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Storagelocation[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \App\Model\Entity\Storagelocation[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  */
-class StoragelocationTable extends Table
+class StoragelocationsTable extends Table
 {
     /**
      * Initialize method
@@ -37,9 +40,17 @@ class StoragelocationTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('storagelocation');
-        $this->setDisplayField('StorageLocationID');
-        $this->setPrimaryKey('StorageLocationID');
+        $this->setTable('storagelocations');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
+
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER',
+        ]);
+        $this->hasMany('Storageunits', [
+            'foreignKey' => 'storagelocation_id',
+        ]);
     }
 
     /**
@@ -51,31 +62,32 @@ class StoragelocationTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-            ->integer('Assigned_User_ID')
-            ->requirePresence('Assigned_User_ID', 'create')
-            ->notEmptyString('Assigned_User_ID')
-            ->add('Assigned_User_ID', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->integer('user_id')
+            ->requirePresence('user_id', 'create')
+            ->notEmptyString('user_id')
+            ->add('user_id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
-            ->scalar('Name')
-            ->maxLength('Name', 50)
-            ->requirePresence('Name', 'create')
-            ->notEmptyString('Name');
+            ->scalar('name')
+            ->maxLength('name', 50)
+            ->requirePresence('name', 'create')
+            ->notEmptyString('name')
+            ->add('name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
-            ->scalar('Address')
-            ->maxLength('Address', 50)
-            ->requirePresence('Address', 'create')
-            ->notEmptyString('Address');
+            ->scalar('address')
+            ->maxLength('address', 50)
+            ->requirePresence('address', 'create')
+            ->notEmptyString('address');
 
         $validator
-            ->scalar('Description')
-            ->requirePresence('Description', 'create')
-            ->notEmptyString('Description');
+            ->scalar('description')
+            ->requirePresence('description', 'create')
+            ->notEmptyString('description');
 
         $validator
-            ->dateTime('Updated_at')
-            ->notEmptyDateTime('Updated_at');
+            ->dateTime('updated_at')
+            ->notEmptyDateTime('updated_at');
 
         return $validator;
     }
@@ -89,7 +101,8 @@ class StoragelocationTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->isUnique(['Assigned_User_ID']), ['errorField' => 'Assigned_User_ID']);
+        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
+        $rules->add($rules->isUnique(['name']), ['errorField' => 'name']);
 
         return $rules;
     }

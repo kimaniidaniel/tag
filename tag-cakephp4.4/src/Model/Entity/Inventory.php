@@ -8,14 +8,18 @@ use Cake\ORM\Entity;
 /**
  * Inventory Entity
  *
- * @property int $ItemID
- * @property int $StorageUnitID
- * @property int $UserID
- * @property string $Description
- * @property int $Number_of_Items
- * @property \Cake\I18n\FrozenDate $Arrival_Date
- * @property \Cake\I18n\FrozenDate $Departure_Date
- * @property \Cake\I18n\FrozenTime $Updated_at
+ * @property int $id
+ * @property string $name
+ * @property int $storageunit_id
+ * @property int $user_id
+ * @property string $description
+ * @property int $number_of_items
+ * @property \Cake\I18n\FrozenDate $arival_date
+ * @property \Cake\I18n\FrozenDate $departure_date
+ * @property \Cake\I18n\FrozenTime $updated_at
+ *
+ * @property \App\Model\Entity\Storageunit $storageunit
+ * @property \App\Model\Entity\User $user
  */
 class Inventory extends Entity
 {
@@ -29,12 +33,15 @@ class Inventory extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'StorageUnitID' => true,
-        'UserID' => true,
-        'Description' => true,
-        'Number_of_Items' => true,
-        'Arrival_Date' => true,
-        'Departure_Date' => true,
-        'Updated_at' => true,
+        'name' => true,
+        'storageunit_id' => true,
+        'user_id' => true,
+        'description' => true,
+        'number_of_items' => true,
+        'arival_date' => true,
+        'departure_date' => true,
+        'updated_at' => true,
+        'storageunit' => true,
+        'user' => true,
     ];
 }

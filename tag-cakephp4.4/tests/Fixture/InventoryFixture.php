@@ -25,14 +25,15 @@ class InventoryFixture extends TestFixture
     {
         $this->records = [
             [
-                'ItemID' => 1,
-                'StorageUnitID' => 1,
-                'UserID' => 1,
-                'Description' => 'Lorem ipsum dolor sit amet',
-                'Number_of_Items' => 1,
-                'Arrival_Date' => '2022-07-07',
-                'Departure_Date' => '2022-07-07',
-                'Updated_at' => 1657156277,
+                'id' => 1,
+                'name' => 'Lorem ipsum dolor sit amet',
+                'storageunit_id' => 1,
+                'user_id' => 1,
+                'description' => 'Lorem ipsum dolor sit amet',
+                'number_of_items' => 1,
+                'arival_date' => '2022-07-07',
+                'departure_date' => '2022-07-07',
+                'updated_at' => 1657201428,
             ],
         ];
         parent::init();

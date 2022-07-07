@@ -4,12 +4,12 @@ declare(strict_types=1);
 namespace App\Controller;
 
 /**
- * Storagelocation Controller
+ * Storagelocations Controller
  *
- * @property \App\Model\Table\StoragelocationTable $Storagelocation
+ * @property \App\Model\Table\StoragelocationsTable $Storagelocations
  * @method \App\Model\Entity\Storagelocation[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class StoragelocationController extends AppController
+class StoragelocationsController extends AppController
 {
     /**
      * Index method
@@ -18,9 +18,12 @@ class StoragelocationController extends AppController
      */
     public function index()
     {
-        $storagelocation = $this->paginate($this->Storagelocation);
+        $this->paginate = [
+            'contain' => ['Users'],
+        ];
+        $storagelocations = $this->paginate($this->Storagelocations);
 
-        $this->set(compact('storagelocation'));
+        $this->set(compact('storagelocations'));
     }
 
     /**
@@ -32,8 +35,8 @@ class StoragelocationController extends AppController
      */
     public function view($id = null)
     {
-        $storagelocation = $this->Storagelocation->get($id, [
-            'contain' => [],
+        $storagelocation = $this->Storagelocations->get($id, [
+            'contain' => ['Users', 'Storageunits'],
         ]);
 
         $this->set(compact('storagelocation'));
@@ -46,17 +49,18 @@ class StoragelocationController extends AppController
      */
     public function add()
     {
-        $storagelocation = $this->Storagelocation->newEmptyEntity();
+        $storagelocation = $this->Storagelocations->newEmptyEntity();
         if ($this->request->is('post')) {
-            $storagelocation = $this->Storagelocation->patchEntity($storagelocation, $this->request->getData());
-            if ($this->Storagelocation->save($storagelocation)) {
+            $storagelocation = $this->Storagelocations->patchEntity($storagelocation, $this->request->getData());
+            if ($this->Storagelocations->save($storagelocation)) {
                 $this->Flash->success(__('The storagelocation has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
         }
-        $this->set(compact('storagelocation'));
+        $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
+        $this->set(compact('storagelocation', 'users'));
     }
 
     /**
@@ -68,19 +72,20 @@ class StoragelocationController extends AppController
      */
     public function edit($id = null)
     {
-        $storagelocation = $this->Storagelocation->get($id, [
+        $storagelocation = $this->Storagelocations->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $storagelocation = $this->Storagelocation->patchEntity($storagelocation, $this->request->getData());
-            if ($this->Storagelocation->save($storagelocation)) {
+            $storagelocation = $this->Storagelocations->patchEntity($storagelocation, $this->request->getData());
+            if ($this->Storagelocations->save($storagelocation)) {
                 $this->Flash->success(__('The storagelocation has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
         }
-        $this->set(compact('storagelocation'));
+        $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
+        $this->set(compact('storagelocation', 'users'));
     }
 
     /**
@@ -93,8 +98,8 @@ class StoragelocationController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $storagelocation = $this->Storagelocation->get($id);
-        if ($this->Storagelocation->delete($storagelocation)) {
+        $storagelocation = $this->Storagelocations->get($id);
+        if ($this->Storagelocations->delete($storagelocation)) {
             $this->Flash->success(__('The storagelocation has been deleted.'));
         } else {
             $this->Flash->error(__('The storagelocation could not be deleted. Please, try again.'));

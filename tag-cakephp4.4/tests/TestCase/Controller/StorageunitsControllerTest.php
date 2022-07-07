@@ -3,16 +3,16 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\InventoryController;
+use App\Controller\StorageunitsController;
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Controller\InventoryController Test Case
+ * App\Controller\StorageunitsController Test Case
  *
- * @uses \App\Controller\InventoryController
+ * @uses \App\Controller\StorageunitsController
  */
-class InventoryControllerTest extends TestCase
+class StorageunitsControllerTest extends TestCase
 {
     use IntegrationTestTrait;
 
@@ -22,16 +22,17 @@ class InventoryControllerTest extends TestCase
      * @var array<string>
      */
     protected $fixtures = [
-        'app.Inventory',
         'app.Storageunits',
+        'app.Storagelocations',
         'app.Users',
+        'app.Inventory',
     ];
 
     /**
      * Test index method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::index()
+     * @uses \App\Controller\StorageunitsController::index()
      */
     public function testIndex(): void
     {
@@ -42,7 +43,7 @@ class InventoryControllerTest extends TestCase
      * Test view method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::view()
+     * @uses \App\Controller\StorageunitsController::view()
      */
     public function testView(): void
     {
@@ -53,7 +54,7 @@ class InventoryControllerTest extends TestCase
      * Test add method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::add()
+     * @uses \App\Controller\StorageunitsController::add()
      */
     public function testAdd(): void
     {
@@ -64,7 +65,7 @@ class InventoryControllerTest extends TestCase
      * Test edit method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::edit()
+     * @uses \App\Controller\StorageunitsController::edit()
      */
     public function testEdit(): void
     {
@@ -75,7 +76,7 @@ class InventoryControllerTest extends TestCase
      * Test delete method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::delete()
+     * @uses \App\Controller\StorageunitsController::delete()
      */
     public function testDelete(): void
     {

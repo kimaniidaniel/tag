@@ -3,16 +3,16 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\InventoryController;
+use App\Controller\StoragelocationsController;
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Controller\InventoryController Test Case
+ * App\Controller\StoragelocationsController Test Case
  *
- * @uses \App\Controller\InventoryController
+ * @uses \App\Controller\StoragelocationsController
  */
-class InventoryControllerTest extends TestCase
+class StoragelocationsControllerTest extends TestCase
 {
     use IntegrationTestTrait;
 
@@ -22,16 +22,16 @@ class InventoryControllerTest extends TestCase
      * @var array<string>
      */
     protected $fixtures = [
-        'app.Inventory',
-        'app.Storageunits',
+        'app.Storagelocations',
         'app.Users',
+        'app.Storageunits',
     ];
 
     /**
      * Test index method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::index()
+     * @uses \App\Controller\StoragelocationsController::index()
      */
     public function testIndex(): void
     {
@@ -42,7 +42,7 @@ class InventoryControllerTest extends TestCase
      * Test view method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::view()
+     * @uses \App\Controller\StoragelocationsController::view()
      */
     public function testView(): void
     {
@@ -53,7 +53,7 @@ class InventoryControllerTest extends TestCase
      * Test add method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::add()
+     * @uses \App\Controller\StoragelocationsController::add()
      */
     public function testAdd(): void
     {
@@ -64,7 +64,7 @@ class InventoryControllerTest extends TestCase
      * Test edit method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::edit()
+     * @uses \App\Controller\StoragelocationsController::edit()
      */
     public function testEdit(): void
     {
@@ -75,7 +75,7 @@ class InventoryControllerTest extends TestCase
      * Test delete method
      *
      * @return void
-     * @uses \App\Controller\InventoryController::delete()
+     * @uses \App\Controller\StoragelocationsController::delete()
      */
     public function testDelete(): void
     {

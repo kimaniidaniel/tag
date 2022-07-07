@@ -18,6 +18,9 @@ class InventoryController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Storageunits', 'Users'],
+        ];
         $inventory = $this->paginate($this->Inventory);
 
         $this->set(compact('inventory'));
@@ -33,7 +36,7 @@ class InventoryController extends AppController
     public function view($id = null)
     {
         $inventory = $this->Inventory->get($id, [
-            'contain' => [],
+            'contain' => ['Storageunits', 'Users'],
         ]);
 
         $this->set(compact('inventory'));
@@ -56,7 +59,16 @@ class InventoryController extends AppController
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
         }
-        $this->set(compact('inventory'));
+        $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
+        $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
+        $users = $this->Inventory->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
+            return [
+                'value' => $value->id, 'text' => $value->first_name . ' ' . $value->last_name
+            ];
+        });
+        debug($storageunits->toArray());
+        debug($users->toArray());
+        $this->set(compact('inventory', 'storageunits', 'users'));
     }
 
     /**
@@ -80,7 +92,9 @@ class InventoryController extends AppController
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
         }
-        $this->set(compact('inventory'));
+        $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
+        $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
+        $this->set(compact('inventory', 'storageunits', 'users'));
     }
 
     /**

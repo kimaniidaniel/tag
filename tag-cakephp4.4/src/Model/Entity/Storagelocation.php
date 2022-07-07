@@ -8,12 +8,15 @@ use Cake\ORM\Entity;
 /**
  * Storagelocation Entity
  *
- * @property int $StorageLocationID
- * @property int $Assigned_User_ID
- * @property string $Name
- * @property string $Address
- * @property string $Description
- * @property \Cake\I18n\FrozenTime $Updated_at
+ * @property int $id
+ * @property int $user_id
+ * @property string $name
+ * @property string $address
+ * @property string $description
+ * @property \Cake\I18n\FrozenTime $updated_at
+ *
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Storageunit[] $storageunits
  */
 class Storagelocation extends Entity
 {
@@ -27,10 +30,12 @@ class Storagelocation extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'Assigned_User_ID' => true,
-        'Name' => true,
-        'Address' => true,
-        'Description' => true,
-        'Updated_at' => true,
+        'user_id' => true,
+        'name' => true,
+        'address' => true,
+        'description' => true,
+        'updated_at' => true,
+        'user' => true,
+        'storageunits' => true,
     ];
 }

@@ -8,16 +8,20 @@ use Cake\ORM\Entity;
 /**
  * User Entity
  *
- * @property int $UserID
- * @property string $FirstName
- * @property string $LastName
- * @property string $UserName
- * @property string $Password
- * @property string $Term
- * @property string $Role
- * @property string $Identifier
- * @property string $Email
- * @property string $Address
+ * @property int $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $username
+ * @property string $password
+ * @property string $unit
+ * @property string $role
+ * @property string $identifier
+ * @property string $email
+ * @property string $address
+ *
+ * @property \App\Model\Entity\Inventory[] $inventory
+ * @property \App\Model\Entity\Storagelocation[] $storagelocations
+ * @property \App\Model\Entity\Storageunit[] $storageunits
  */
 class User extends Entity
 {
@@ -31,14 +35,16 @@ class User extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'FirstName' => true,
-        'LastName' => true,
-        'UserName' => true,
-        'Password' => true,
-        'Term' => true,
-        'Role' => true,
-        'Identifier' => true,
-        'Email' => true,
-        'Address' => true,
+        '*' => true,
+        'password' => false,
+    ];
+
+    /**
+     * Fields that are excluded from JSON versions of the entity.
+     *
+     * @var array<string>
+     */
+    protected $_hidden = [
+        'password',
     ];
 }

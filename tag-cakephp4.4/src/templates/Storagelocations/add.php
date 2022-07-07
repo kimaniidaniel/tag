@@ -2,26 +2,27 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Storagelocation $storagelocation
+ * @var \Cake\Collection\CollectionInterface|string[] $users
  */
 ?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Storagelocation'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('List Storagelocations'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
-        <div class="storagelocation form content">
+        <div class="storagelocations form content">
             <?= $this->Form->create($storagelocation) ?>
             <fieldset>
                 <legend><?= __('Add Storagelocation') ?></legend>
                 <?php
-                    echo $this->Form->control('Assigned_User_ID');
-                    echo $this->Form->control('Name');
-                    echo $this->Form->control('Address');
-                    echo $this->Form->control('Description');
-                    echo $this->Form->control('Updated_at');
+                    echo $this->Form->control('user_id', ['options' => $users]);
+                    echo $this->Form->control('name');
+                    echo $this->Form->control('address');
+                    echo $this->Form->control('description');
+                    echo $this->Form->control('updated_at');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

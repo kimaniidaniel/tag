@@ -8,11 +8,16 @@ use Cake\ORM\Entity;
 /**
  * Storageunit Entity
  *
- * @property int $StorageUnitID
- * @property int $StorageLocationID
- * @property string $StorageName
- * @property int $Assigned_User_ID
- * @property \Cake\I18n\FrozenTime $Updated_at
+ * @property int $id
+ * @property int $storagelocation_id
+ * @property string $name
+ * @property string $identifier
+ * @property int $user_id
+ * @property \Cake\I18n\FrozenTime $updated_at
+ *
+ * @property \App\Model\Entity\Storagelocation $storagelocation
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Inventory[] $inventory
  */
 class Storageunit extends Entity
 {
@@ -26,9 +31,13 @@ class Storageunit extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'StorageLocationID' => true,
-        'StorageName' => true,
-        'Assigned_User_ID' => true,
-        'Updated_at' => true,
+        'storagelocation_id' => true,
+        'name' => true,
+        'identifier' => true,
+        'user_id' => true,
+        'updated_at' => true,
+        'storagelocation' => true,
+        'user' => true,
+        'inventory' => true,
     ];
 }

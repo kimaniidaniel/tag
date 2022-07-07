@@ -4,12 +4,12 @@ declare(strict_types=1);
 namespace App\Controller;
 
 /**
- * Storageunit Controller
+ * Storageunits Controller
  *
- * @property \App\Model\Table\StorageunitTable $Storageunit
+ * @property \App\Model\Table\StorageunitsTable $Storageunits
  * @method \App\Model\Entity\Storageunit[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class StorageunitController extends AppController
+class StorageunitsController extends AppController
 {
     /**
      * Index method
@@ -18,9 +18,12 @@ class StorageunitController extends AppController
      */
     public function index()
     {
-        $storageunit = $this->paginate($this->Storageunit);
+        $this->paginate = [
+            'contain' => ['Storagelocations', 'Users'],
+        ];
+        $storageunits = $this->paginate($this->Storageunits);
 
-        $this->set(compact('storageunit'));
+        $this->set(compact('storageunits'));
     }
 
     /**
@@ -32,8 +35,8 @@ class StorageunitController extends AppController
      */
     public function view($id = null)
     {
-        $storageunit = $this->Storageunit->get($id, [
-            'contain' => [],
+        $storageunit = $this->Storageunits->get($id, [
+            'contain' => ['Storagelocations', 'Users', 'Inventory'],
         ]);
 
         $this->set(compact('storageunit'));
@@ -46,17 +49,19 @@ class StorageunitController extends AppController
      */
     public function add()
     {
-        $storageunit = $this->Storageunit->newEmptyEntity();
+        $storageunit = $this->Storageunits->newEmptyEntity();
         if ($this->request->is('post')) {
-            $storageunit = $this->Storageunit->patchEntity($storageunit, $this->request->getData());
-            if ($this->Storageunit->save($storageunit)) {
+            $storageunit = $this->Storageunits->patchEntity($storageunit, $this->request->getData());
+            if ($this->Storageunits->save($storageunit)) {
                 $this->Flash->success(__('The storageunit has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storageunit could not be saved. Please, try again.'));
         }
-        $this->set(compact('storageunit'));
+        $storagelocations = $this->Storageunits->Storagelocations->find('list', ['limit' => 200])->all();
+        $users = $this->Storageunits->Users->find('list', ['limit' => 200])->all();
+        $this->set(compact('storageunit', 'storagelocations', 'users'));
     }
 
     /**
@@ -68,19 +73,21 @@ class StorageunitController extends AppController
      */
     public function edit($id = null)
     {
-        $storageunit = $this->Storageunit->get($id, [
+        $storageunit = $this->Storageunits->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $storageunit = $this->Storageunit->patchEntity($storageunit, $this->request->getData());
-            if ($this->Storageunit->save($storageunit)) {
+            $storageunit = $this->Storageunits->patchEntity($storageunit, $this->request->getData());
+            if ($this->Storageunits->save($storageunit)) {
                 $this->Flash->success(__('The storageunit has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storageunit could not be saved. Please, try again.'));
         }
-        $this->set(compact('storageunit'));
+        $storagelocations = $this->Storageunits->Storagelocations->find('list', ['limit' => 200])->all();
+        $users = $this->Storageunits->Users->find('list', ['limit' => 200])->all();
+        $this->set(compact('storageunit', 'storagelocations', 'users'));
     }
 
     /**
@@ -93,8 +100,8 @@ class StorageunitController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $storageunit = $this->Storageunit->get($id);
-        if ($this->Storageunit->delete($storageunit)) {
+        $storageunit = $this->Storageunits->get($id);
+        if ($this->Storageunits->delete($storageunit)) {
             $this->Flash->success(__('The storageunit has been deleted.'));
         } else {
             $this->Flash->error(__('The storageunit could not be deleted. Please, try again.'));

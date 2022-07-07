@@ -3,20 +3,20 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\InventoryTable;
+use App\Model\Table\StorageunitsTable;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\InventoryTable Test Case
+ * App\Model\Table\StorageunitsTable Test Case
  */
-class InventoryTableTest extends TestCase
+class StorageunitsTableTest extends TestCase
 {
     /**
      * Test subject
      *
-     * @var \App\Model\Table\InventoryTable
+     * @var \App\Model\Table\StorageunitsTable
      */
-    protected $Inventory;
+    protected $Storageunits;
 
     /**
      * Fixtures
@@ -24,9 +24,10 @@ class InventoryTableTest extends TestCase
      * @var array<string>
      */
     protected $fixtures = [
-        'app.Inventory',
         'app.Storageunits',
+        'app.Storagelocations',
         'app.Users',
+        'app.Inventory',
     ];
 
     /**
@@ -37,8 +38,8 @@ class InventoryTableTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $config = $this->getTableLocator()->exists('Inventory') ? [] : ['className' => InventoryTable::class];
-        $this->Inventory = $this->getTableLocator()->get('Inventory', $config);
+        $config = $this->getTableLocator()->exists('Storageunits') ? [] : ['className' => StorageunitsTable::class];
+        $this->Storageunits = $this->getTableLocator()->get('Storageunits', $config);
     }
 
     /**
@@ -48,7 +49,7 @@ class InventoryTableTest extends TestCase
      */
     protected function tearDown(): void
     {
-        unset($this->Inventory);
+        unset($this->Storageunits);
 
         parent::tearDown();
     }
@@ -57,7 +58,7 @@ class InventoryTableTest extends TestCase
      * Test validationDefault method
      *
      * @return void
-     * @uses \App\Model\Table\InventoryTable::validationDefault()
+     * @uses \App\Model\Table\StorageunitsTable::validationDefault()
      */
     public function testValidationDefault(): void
     {
@@ -68,7 +69,7 @@ class InventoryTableTest extends TestCase
      * Test buildRules method
      *
      * @return void
-     * @uses \App\Model\Table\InventoryTable::buildRules()
+     * @uses \App\Model\Table\StorageunitsTable::buildRules()
      */
     public function testBuildRules(): void
     {
