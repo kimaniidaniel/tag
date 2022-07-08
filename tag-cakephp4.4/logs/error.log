@@ -1,0 +1,1081 @@
+2022-07-07 10:52:56 error: [Cake\Http\Exception\MissingControllerException] Controller class Storagelocationts could not be found. in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Storagelocationts',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /storagelocationts/add
+2022-07-07 11:26:53 error: [Cake\Http\Exception\MissingControllerException] Controller class User could not be found. in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /User
+2022-07-07 11:27:12 error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Inventory.ItemID' in 'where clause' in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:180
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:75
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Connection.php:359
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Connection.php:362
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Database\Query.php:250
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\ORM\Query.php:1148
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:288
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\ORM\Query.php:1096
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:495
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:506
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\ORM\Table.php:1541
+- C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php:36
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /inventory/view/1
+2022-07-07 13:52:11 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:52:11 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:52:11 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:52:11 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:52:30 error: [ParseError] syntax error, unexpected token "=>", expecting ")" in C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php on line 64
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\composer\ClassLoader.php:428
+- [internal]:??
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Core\App.php:161
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Core\App.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:337
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:72
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+2022-07-07 13:53:03 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:03 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:03 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:03 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:36 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:53:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:54:44 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:54:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:54:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 13:54:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:02:32 warning: Undefined variable $query
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+App\Controller\InventoryController::add() C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php, line 64
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:02:32 error: [Error] Call to a member function func() on null in C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php on line 64
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+2022-07-07 14:02:32 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=36
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:02:32 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:02:32 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:02:32 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:03:30 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:03:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:03:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:03:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:06:18 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:06:18 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:06:18 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:06:18 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:10:44 error: [TypeError] Unsupported operand types: string + string in C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php on line 66
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Collection\Iterator\ReplaceIterator.php:73
+- [internal]:??
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php:690
+- C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\InventoryController.php:70
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+2022-07-07 14:10:44 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:10:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:10:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:10:44 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:11:19 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:11:19 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:11:19 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 14:11:19 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /inventory/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/inventory
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:05:45 warning: Attempt to read property "Users" on null
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+Trace:
+App\Controller\StorageunitsController::add() C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\StorageunitsController.php, line 64
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:05:45 error: [Error] Call to a member function find() on null in C:\xampp\htdocs\tag\tag-cakephp4.4\src\Controller\StorageunitsController.php on line 64
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+2022-07-07 15:05:45 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=36
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:05:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:05:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:05:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /storageunits/add
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:12:02 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storagelocations
+Referer URL: http://localhost/tag/tag-cakephp4.4/storagelocations/add
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:12:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storagelocations
+Referer URL: http://localhost/tag/tag-cakephp4.4/storagelocations/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:12:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storagelocations
+Referer URL: http://localhost/tag/tag-cakephp4.4/storagelocations/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-07 15:12:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storagelocations
+Referer URL: http://localhost/tag/tag-cakephp4.4/storagelocations/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:36:27 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:36:27 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:36:27 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:36:27 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:06 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:06 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:06 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:06 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:17 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:17 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:17 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:17 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:30 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:39:30 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:40:45 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:40:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:40:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:40:45 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:41:42 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:41:42 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:41:42 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:41:42 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:43:41 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:43:41 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:43:41 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:43:41 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:49:26 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:49:26 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:49:26 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:49:26 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:50:35 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits/
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:50:35 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:50:35 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:50:35 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits/
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:56:23 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/add
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:56:23 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:56:23 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 00:56:23 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/add
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 01:01:36 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=1106
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/view/1
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 01:01:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/view/1
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 01:01:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/view/1
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 01:01:36 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Debugger.php:1106)
+Request URL: /storageunits
+Referer URL: http://localhost/tag/tag-cakephp4.4/storageunits/view/1
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php, line 40
+
+2022-07-08 01:07:56 error: [Cake\Http\Exception\MissingControllerException] Controller class Inventorys could not be found. in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Inventorys',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /inventorys
