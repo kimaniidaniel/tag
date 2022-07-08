@@ -16,7 +16,7 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="storageunits view content">
-            <h3><?= h($storageunit->name) ?></h3>
+            <h3><?= h($storageunit->name) ?> (<?= $this->Number->format($storageunit->id) ?>)</h3>
             <table>
                 <tr>
                     <th><?= __('Storagelocation') ?></th>
@@ -33,10 +33,6 @@
                 <tr>
                     <th><?= __('User') ?></th>
                     <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->id, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($storageunit->id) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>

@@ -23,7 +23,7 @@
                     echo $this->Form->control('name');
                     echo $this->Form->control('identifier');
                     echo $this->Form->control('user_id', ['options' => $users]);
-                    echo $this->Form->control('updated_at');
+                    // echo $this->Form->control('updated_at');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

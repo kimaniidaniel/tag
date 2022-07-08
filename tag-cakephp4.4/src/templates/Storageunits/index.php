@@ -6,12 +6,12 @@
 ?>
 <div class="storageunits index content">
     <?= $this->Html->link(__('New Storageunit'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Storageunits') ?></h3>
+    <h3><?= __('Storage Units') ?></h3>
     <div class="table-responsive">
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('storagelocation_id') ?></th>
                     <th><?= $this->Paginator->sort('name') ?></th>
                     <th><?= $this->Paginator->sort('identifier') ?></th>
@@ -23,11 +23,11 @@
             <tbody>
                 <?php foreach ($storageunits as $storageunit): ?>
                 <tr>
-                    <td><?= $this->Number->format($storageunit->id) ?></td>
-                    <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : '' ?></td>
+                    <!-- <td><?= $this->Number->format($storageunit->id) ?></td> -->
+                    <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : $storageunit->storagelocation_id ?></td>
                     <td><?= h($storageunit->name) ?></td>
                     <td><?= h($storageunit->identifier) ?></td>
-                    <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->id, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
+                    <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                     <td><?= h($storageunit->updated_at) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $storageunit->id]) ?>

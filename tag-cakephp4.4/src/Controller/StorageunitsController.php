@@ -22,7 +22,7 @@ class StorageunitsController extends AppController
             'contain' => ['Storagelocations', 'Users'],
         ];
         $storageunits = $this->paginate($this->Storageunits);
-
+        // debug($storageunits);
         $this->set(compact('storageunits'));
     }
 
