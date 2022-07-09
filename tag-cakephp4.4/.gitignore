@@ -1,4 +1,10 @@
 
+# CakePHP specific files #
+##########################
+/config/.env
+/logs/*
+/tmp/*
+tag-cakephp4.4/tmp/*
 
 # OS generated files #
 ######################
