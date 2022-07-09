@@ -24,3 +24,4 @@
 /app/Config/database.php
 /vendors/*
 tag-cakephp4.4/tmp/*
+tag-cakephp4.4/logs/error.log
