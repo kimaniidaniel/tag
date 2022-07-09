@@ -14,11 +14,13 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'TAG: we will store and track your bags safely';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
@@ -38,11 +40,15 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Tag</span>1.0</a>
+            <a href="<?= $this->Url->build('/') ?>"><span>Tag</span> 1.0</a>
         </div>
         <div class="top-nav-links">
-            <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>
+            <i class="fa fa-boxes"></i><a href="<?= $this->Url->build('/inventory') ?>"><span>Inventory</span></a> &nbsp;
+            <i class="fa fa-archive"></i><a href="<?= $this->Url->build('/storageunits') ?>"><span>Storage Units</span></a> &nbsp;
+            <i class="fas fa-warehouse"></i><a href="<?= $this->Url->build('/storagelocations') ?>"><span>Storage Locations</span></a> &nbsp;
+            <i class="fa fa-users"></i><a href="<?= $this->Url->build('/users') ?>"><span>Users</span></a> 
+            <!-- <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a> -->
+            <!-- <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a> -->
         </div>
     </nav>
     <main class="main">
