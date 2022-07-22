@@ -21,7 +21,35 @@ class StorageunitsController extends AppController
         $this->paginate = [
             'contain' => ['Storagelocations', 'Users'],
         ];
-        $storageunits = $this->paginate($this->Storageunits);
+
+        // for Search ------- Start -------
+        // https://book.cakephp.org/4/en/orm/query-builder.html
+        if(isset($this->request->getData()['query']) && !empty($this->request->getData()['query']))
+        {
+            $q = $this->request->getData()['query']; // get search query sent in from form
+            if(!empty($q)) {
+                $conditions = ['OR'=>[
+                    'Users.first_name like'=>'%'.$q.'%',
+                    'Users.last_name like'=>'%'.$q.'%',
+                    'Users.identifier like'=>'%'.$q.'%',
+                    'Users.address like'=>'%'.$q.'%',
+                    'Users.unit like'=>'%'.$q.'%',
+                    'Users.email like'=>'%'.$q.'%',
+                    'Users.role like'=>'%'.$q.'%',
+                    'Storagelocations.name like'=>'%'.$q.'%',
+                    'Storagelocations.address like'=>'%'.$q.'%',
+                    'Storagelocations.description like'=>'%'.$q.'%',
+                    'Storageunits.name like'=>'%'.$q.'%',
+                    'Storageunits.identifier like'=>'%'.$q.'%',
+                ]];
+
+                $storageunits = $this->paginate($this->Storageunits->find('all',['conditions'=> $conditions ]));
+            }
+        } else {
+            $storageunits = $this->paginate($this->Storageunits);
+        }
+        // for Search ------- End -------
+
         // debug($storageunits);
         $this->set(compact('storageunits'));
     }

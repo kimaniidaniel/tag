@@ -7,6 +7,17 @@
 <div class="inventory index content">
     <?= $this->Html->link(__('New Inventory'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Inventory') ?></h3>
+    <small>Here you will find the list of items being stored</small>
+    <div class="table-responsive">
+        <?php echo $this->Form->create(); ?>
+        <?php echo $this->Form->control('query', 
+            ['placeholder'=>'Search: Name, unit, description etc.', 'class'=>'search-text',
+                'label'=>'',
+                'style'=>'border-radius:5px;width:100%']
+            ); 
+        echo $this->Form->button(__('Search'));
+        echo $this->Form->end(); ?>
+    </div>
     <div class="table-responsive">
         <table>
             <thead>

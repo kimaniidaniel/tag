@@ -21,8 +21,36 @@ class InventoryController extends AppController
         $this->paginate = [
             'contain' => ['Storageunits', 'Users'],
         ];
-        $inventory = $this->paginate($this->Inventory);
+        
+        // debug($inventory);
+        
+        // for Search ------- Start -------
+        if(isset($this->request->getData()['query']) && !empty($this->request->getData()['query']))
+        {
+            $q = $this->request->getData()['query']; // get search query sent in from form
+            if(!empty($q)) {
+                $conditions = ['OR'=>[
+                    'Inventory.name like'=>'%'.$q.'%',
+                    'Inventory.description like'=>'%'.$q.'%',
+                    'Users.first_name like'=>'%'.$q.'%',
+                    'Users.last_name like'=>'%'.$q.'%',
+                    'Users.identifier like'=>'%'.$q.'%',
+                    'Users.address like'=>'%'.$q.'%',
+                    'Users.unit like'=>'%'.$q.'%',
+                    'Users.email like'=>'%'.$q.'%',
+                    'Users.role like'=>'%'.$q.'%',
+                    'Storageunits.name like'=>'%'.$q.'%',
+                    'Storageunits.identifier like'=>'%'.$q.'%',
+                ]];
 
+                $inventory = $this->paginate($this->Inventory->find('all',['conditions'=> $conditions ]));
+            }
+
+        } else {
+            $inventory = $this->paginate($this->Inventory);
+        }
+        // for Search ------- End -------
+        
         $this->set(compact('inventory'));
     }
 

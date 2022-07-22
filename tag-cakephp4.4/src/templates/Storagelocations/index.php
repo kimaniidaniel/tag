@@ -7,6 +7,17 @@
 <div class="storagelocations index content">
     <?= $this->Html->link(__('New Storagelocation'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Storagelocations') ?></h3>
+    <small>Here you will find the list of storage location in the system</small>
+    <div class="table-responsive">
+        <?php echo $this->Form->create(); ?>
+        <?php echo $this->Form->control('query', 
+            ['placeholder'=>'Search: Name, address, description etc.', 'class'=>'search-text',
+                'label'=>'',
+                'style'=>'border-radius:5px;width:100%']
+            ); 
+        echo $this->Form->button(__('Search'));
+        echo $this->Form->end(); ?>
+    </div>
     <div class="table-responsive">
         <table>
             <thead>

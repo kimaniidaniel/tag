@@ -18,7 +18,28 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $users = $this->paginate($this->Users);
+        // for Search ------- Start -------
+        // https://book.cakephp.org/4/en/orm/query-builder.html
+        if(isset($this->request->getData()['query']) && !empty($this->request->getData()['query']))
+        {
+            $q = $this->request->getData()['query']; // get search query sent in from form
+            if(!empty($q)) {
+                $conditions = ['OR'=>[
+                    'Users.first_name like'=>'%'.$q.'%',
+                    'Users.last_name like'=>'%'.$q.'%',
+                    'Users.identifier like'=>'%'.$q.'%',
+                    'Users.address like'=>'%'.$q.'%',
+                    'Users.unit like'=>'%'.$q.'%',
+                    'Users.email like'=>'%'.$q.'%',
+                    'Users.role like'=>'%'.$q.'%'
+                ]];
+
+                $users = $this->paginate($this->Users->find('all',['conditions'=> $conditions ]));
+            }
+        } else {
+            $users = $this->paginate($this->Users);
+        }
+        // for Search ------- End -------
 
         $this->set(compact('users'));
     }
