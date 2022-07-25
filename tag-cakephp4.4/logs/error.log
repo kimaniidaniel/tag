@@ -1079,3 +1079,61 @@ Stack Trace:
 - C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
 
 Request URL: /inventorys
+2022-07-25 13:15:48 error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /css/custom.css
+Referer URL: http://localhost/tag/tag-cakephp4.4/
+2022-07-25 13:15:48 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\tag\tag-cakephp4.4\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\tag\tag-cakephp4.4\webroot\index.php:40
+
+Request URL: /img/nawasa-logo.png
+Referer URL: http://localhost/tag/tag-cakephp4.4/
