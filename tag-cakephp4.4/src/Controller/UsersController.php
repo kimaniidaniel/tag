@@ -29,9 +29,8 @@ class UsersController extends AppController
                     'Users.last_name like'=>'%'.$q.'%',
                     'Users.identifier like'=>'%'.$q.'%',
                     'Users.address like'=>'%'.$q.'%',
-                    'Users.unit like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%'
+                    'Users.role like'=>'%'.$q.'%',
+                    'Users.email like'=>'%'.$q.'%'
                 ]];
 
                 $users = $this->paginate($this->Users->find('all',['conditions'=> $conditions ]));

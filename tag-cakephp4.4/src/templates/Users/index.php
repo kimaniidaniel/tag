@@ -22,9 +22,10 @@
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
-                    <th><?= $this->Paginator->sort('first_name') ?></th>
-                    <th><?= $this->Paginator->sort('last_name') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
+                    <th><?= $this->Paginator->sort('first_name','Name') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('first_name') ?></th>
+                    <th><?= $this->Paginator->sort('last_name') ?></th> -->
                     <th><?= $this->Paginator->sort('username') ?></th>
                     <th><?= $this->Paginator->sort('unit') ?></th>
                     <th><?= $this->Paginator->sort('role') ?></th>
@@ -37,9 +38,10 @@
             <tbody>
                 <?php foreach ($users as $user): ?>
                 <tr>
-                    <td><?= $this->Number->format($user->id) ?></td>
-                    <td><?= h($user->first_name) ?></td>
-                    <td><?= h($user->last_name) ?></td>
+                    <!-- <td><?= $this->Number->format($user->id) ?></td> -->
+                    <td><?= $this->Html->link(h($user->first_name)." ".h($user->last_name), ['action' => 'view', $user->id]) ?></td>
+                    <!-- <td><?= h($user->first_name) ?></td> -->
+                    <!-- <td><?= h($user->last_name) ?></td> -->
                     <td><?= h($user->username) ?></td>
                     <td><?= h($user->unit) ?></td>
                     <td><?= h($user->role) ?></td>
@@ -47,7 +49,7 @@
                     <td><?= h($user->email) ?></td>
                     <td><?= h($user->address) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
+                        <!-- <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?> -->
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
                     </td>
