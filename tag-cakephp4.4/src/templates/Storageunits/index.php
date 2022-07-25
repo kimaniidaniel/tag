@@ -7,6 +7,17 @@
 <div class="storageunits index content">
     <?= $this->Html->link(__('New Storageunit'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Storage Units') ?></h3>
+    <small>Here you will find the list of storge units in the system. A storage unit exists inside a storage location</small>
+    <div class="table-responsive">
+        <?php echo $this->Form->create(); ?>
+        <?php echo $this->Form->control('query', 
+            ['placeholder'=>'Search: Name, idenitifier, user etc.', 'class'=>'search-text',
+                'label'=>'',
+                'style'=>'border-radius:5px;width:100%']
+            ); 
+        echo $this->Form->button(__('Search'));
+        echo $this->Form->end(); ?>
+    </div>
     <div class="table-responsive">
         <table>
             <thead>
