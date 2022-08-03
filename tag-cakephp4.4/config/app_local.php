@@ -69,7 +69,7 @@ return [
             'username' => 'root',
             'password' => 'root',
             'database' => 'tag',
-            //'schema' => 'myapp',
+            //'schema' => 'tag',
             'url' => env('DATABASE_TEST_URL', 'sqlite://127.0.0.1/tests.sqlite'),
         ],
     ],
