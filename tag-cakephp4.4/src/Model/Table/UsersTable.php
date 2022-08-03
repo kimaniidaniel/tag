@@ -88,10 +88,10 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmptyString('password');
 
-        $validator
-            ->scalar('unit')
-            ->requirePresence('unit', 'create')
-            ->notEmptyString('unit');
+       // $validator
+            //->scalar('unit')
+           // ->requirePresence('unit', 'create')
+           // ->notEmptyString('unit');
 
         $validator
             ->scalar('role')
