@@ -31,10 +31,6 @@
                     <td><?= h($user->username) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Unit') ?></th>
-                    <td><?= h($user->unit) ?></td>
-                </tr>
-                <tr>
                     <th><?= __('Role') ?></th>
                     <td><?= h($user->role) ?></td>
                 </tr>
