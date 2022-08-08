@@ -26,7 +26,7 @@
                     echo $this->Form->control('last_name');
                     echo $this->Form->control('username');
                     echo $this->Form->control('password');
-                    echo $this->Form->control('unit');
+                    //echo $this->Form->control('unit');//
                     echo $this->Form->control('role');
                     echo $this->Form->control('identifier');
                     echo $this->Form->control('email');

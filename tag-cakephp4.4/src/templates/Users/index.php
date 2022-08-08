@@ -27,7 +27,7 @@
                     <!-- <th><?= $this->Paginator->sort('first_name') ?></th>
                     <th><?= $this->Paginator->sort('last_name') ?></th> -->
                     <th><?= $this->Paginator->sort('username') ?></th>
-                    <th><?= $this->Paginator->sort('unit') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('unit') ?></th> -->
                     <th><?= $this->Paginator->sort('role') ?></th>
                     <th><?= $this->Paginator->sort('identifier') ?></th>
                     <th><?= $this->Paginator->sort('email') ?></th>
@@ -43,7 +43,7 @@
                     <!-- <td><?= h($user->first_name) ?></td> -->
                     <!-- <td><?= h($user->last_name) ?></td> -->
                     <td><?= h($user->username) ?></td>
-                    <td><?= h($user->unit) ?></td>
+                    <!-- <td><?= h($user->unit) ?></td> -->
                     <td><?= h($user->role) ?></td>
                     <td><?= h($user->identifier) ?></td>
                     <td><?= h($user->email) ?></td>
