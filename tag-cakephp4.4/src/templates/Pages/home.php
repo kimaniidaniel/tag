@@ -77,7 +77,7 @@ $cakeDescription = 'TAG: we will store and track your bags safely';
             <div class=""><?= $this->Html->image('nawasa-logo.png') ?></div>
         </a>
         <h2 style="color: white;">
-            TAG 1.0
+            TAG 2.0
         </h2>
         <h4 style="color: white;">
             Welcome to the Online Management Portal (OMP)
