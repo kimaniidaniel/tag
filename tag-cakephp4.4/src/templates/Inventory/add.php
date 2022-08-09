@@ -23,10 +23,11 @@
                     echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
                     echo $this->Form->control('user_id', ['options' => $users]);
                     echo $this->Form->control('description');
+                    echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
-                    echo $this->Form->control('arival_date');
                     echo $this->Form->control('departure_date');
-                    echo $this->Form->control('updated_at');
+                    echo $this->Form->control('arival_date');
+                    echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

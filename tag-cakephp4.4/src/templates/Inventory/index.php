@@ -22,14 +22,14 @@
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('name') ?></th>
-                    <th><?= $this->Paginator->sort('storageunit_id') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('storageunit_id') ?></th> -->
                     <th><?= $this->Paginator->sort('user_id') ?></th>
-                    <th><?= $this->Paginator->sort('description') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
-                    <th><?= $this->Paginator->sort('arival_date') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
+                    <th><?= $this->Paginator->sort('arival_date') ?></th>
                     <th><?= $this->Paginator->sort('updated_at') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
