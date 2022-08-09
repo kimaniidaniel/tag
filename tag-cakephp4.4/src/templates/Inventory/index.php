@@ -37,11 +37,11 @@
             <tbody>
                 <?php foreach ($inventory as $inventory): ?>
                 <tr>
-                    <td><?= $this->Number->format($inventory->id) ?></td>
+                    <!-- <td><?= $this->Number->format($inventory->id) ?></td> -->
                     <td><?= h($inventory->name) ?></td>
-                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
+                    <!-- <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td> -->
                     <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
-                    <td><?= h($inventory->description) ?></td>
+                    <!-- <td><?= h($inventory->description) ?></td> -->
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
