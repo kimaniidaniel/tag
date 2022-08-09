@@ -91,11 +91,10 @@ $cakeDescription = 'TAG: we will store and track your bags safely';
                 <div class="row center">
                     <div class="column">
                         <div class="message default text-center">
-                            <?php echo $this->Html->link("Users", array('controller' => 'users','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to manage Users that can access the system'));?>
                             <?php echo $this->Html->link("Inventory", array('controller' => 'inventory','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to manage the inventory of storage items'));?>
                             <?php echo $this->Html->link("Storage Units", array('controller' => 'storageunits','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to access the storage units'));?>
                             <?php echo $this->Html->link("Storage Locations", array('controller' => 'storagelocations','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to view access the storage locations'));?>
-                            <!-- <?php echo $this->Html->link("Users", array('controller' => 'users','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to manage Users that can access the system'));?> -->
+                            <?php echo $this->Html->link("Users", array('controller' => 'users','action'=> 'index'), array( 'class' => 'button', 'title'=> 'Click to manage Users that can access the system'));?>
                             <hr>
                             <?php
                             // $this->loadHelper('Authentication.Identity');
