@@ -43,8 +43,8 @@
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Arival Date') ?></th>
-                    <td><?= h($inventory->arival_date) ?></td>
+                <th><?= __('Departure Date') ?></th>
+                    <td><?= h($inventory->departure_date) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Departure Date') ?></th>
