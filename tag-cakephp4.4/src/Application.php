@@ -139,7 +139,7 @@ class Application extends BaseApplication
             ]));
 
         return $middlewareQueue;
-    }
+        }
 
     /**
      * Register application container services.
