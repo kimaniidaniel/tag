@@ -174,4 +174,4 @@ AuthenticationServiceInterface
 
         return $authenticationService;
     }
-
+}
