@@ -144,4 +144,34 @@ class Application extends BaseApplication
 
         // Load more plugins here
     }
-}
+
+
+public function getAuthenticationService(ServerRequestInterface $request):
+AuthenticationServiceInterface
+{
+    $authenticationService = new AuthenticationService([
+        'unauthenticationRedirect' => Router::url('/users/login'),
+        'queryParam' => 'redirect',
+    ]);
+
+    //load identifiers, ensure we check email and password fields
+    $authenticationService->loadIdentifier('Authentication.Password', [
+        'fields' => [
+            'username' => 'email',
+            'password' => 'password',
+        ]
+     ]);
+
+        $authenticationService->loadAuthenticator('Authentication.Session');
+        $authenticationService->loadAuthenticator('Authentiction.Form', [
+            'fields' => [
+                'username' =>'email',
+                'password' => 'password',
+            ],
+            'loginURL' => Router::url('/users/login'),
+            
+        ]);
+
+        return $authenticationService;
+    }
+
