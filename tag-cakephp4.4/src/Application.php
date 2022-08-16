@@ -84,7 +84,8 @@ class Application extends BaseApplication
         $middlewareQueue
          
             ->add(new ErrorHandlerMiddleware(Configure::read('Error')))
-            
+            ->add(new RoutingMiddleware($this))
+            ->add(new AuthenticationMiddleware($this))
 
             // Handle plugin/theme assets like CakePHP normally does.
             ->add(new AssetMiddleware([
@@ -97,9 +98,9 @@ class Application extends BaseApplication
             // creating the middleware instance specify the cache config name by
             // using it's second constructor argument:
             // `new RoutingMiddleware($this, '_cake_routes_')`
-            ->add(new RoutingMiddleware($this))
+            
             //add Authentication after RoutingMiddleware
-            ->add(new AuthenticationMiddle($this))
+            
 
 
             // Parse various types of encoded request bodies so that they are
@@ -162,8 +163,10 @@ AuthenticationServiceInterface
         ]
      ]);
 
+     //Load the authenticators, you want session first
         $authenticationService->loadAuthenticator('Authentication.Session');
-        $authenticationService->loadAuthenticator('Authentiction.Form', [
+     //Configure form data check to pick email and password
+        $authenticationService->loadAuthenticator('Authentication.Form', [
             'fields' => [
                 'username' =>'email',
                 'password' => 'password',
