@@ -111,13 +111,15 @@ class StoragelocationsController extends AppController
             $storagelocation = $this->Storagelocations->patchEntity($storagelocation, $this->request->getData());
             if ($this->Storagelocations->save($storagelocation)) {
                 $this->Flash->success(__('The storagelocation has been saved.'));
-
+                debug($storagelocation);
                 return $this->redirect(['action' => 'index']);
             }
+           
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
-        }
+     }
         $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
         $this->set(compact('storagelocation', 'users'));
+       
     }
 
     /**
