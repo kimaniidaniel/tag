@@ -31,13 +31,6 @@ class Storageunit extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'storagelocation_id' => true,
-        'name' => true,
-        'identifier' => true,
-        'user_id' => true,
-        'updated_at' => true,
-        'storagelocation' => true,
-        'user' => true,
-        'inventory' => true,
+        '*' => true
     ];
 }

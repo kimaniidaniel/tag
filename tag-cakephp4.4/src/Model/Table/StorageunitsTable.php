@@ -69,8 +69,8 @@ class StorageunitsTable extends Table
         $validator
             ->integer('storagelocation_id')
             ->requirePresence('storagelocation_id', 'create')
-            ->notEmptyString('storagelocation_id')
-            ->add('storagelocation_id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->notEmptyString('storagelocation_id');
+            // ->add('storagelocation_id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
             ->scalar('name')
