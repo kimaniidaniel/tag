@@ -15,8 +15,8 @@
         <div class="users form content">
             <?= $this->Form->create($user) ?>
             <fieldset>
-                <legend><?= __('Add User') ?></legend>
-                <?php
+                <legend><?= __('Add User') ?></legend> Please enter your details below
+                    <?php
                     echo $this->Form->control('first_name');
                     echo $this->Form->control('last_name');
                     echo $this->Form->control('username');
@@ -25,7 +25,9 @@
                     echo $this->Form->control('role');
                     echo $this->Form->control('identifier');
                     echo $this->Form->control('email');
-                    echo $this->Form->control('address');
+                    echo $this->Form->control('address'); 
+              
+
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
