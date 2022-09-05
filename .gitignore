@@ -27,3 +27,5 @@
 tag-cakephp4.4/tmp/*
 tag-cakephp4.4/logs/error.log
 tag-cakephp4.4/config/app_local.php
+tag-cakephp4.4/vendor/*
+tag-cakephp4.4/vendor/

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller;
@@ -20,20 +21,19 @@ class UsersController extends AppController
     {
         // for Search ------- Start -------
         // https://book.cakephp.org/4/en/orm/query-builder.html
-        if(isset($this->request->getData()['query']) && !empty($this->request->getData()['query']))
-        {
+        if (isset($this->request->getData()['query']) && !empty($this->request->getData()['query'])) {
             $q = $this->request->getData()['query']; // get search query sent in from form
-            if(!empty($q)) {
-                $conditions = ['OR'=>[
-                    'Users.first_name like'=>'%'.$q.'%',
-                    'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
-                    'Users.address like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%'
+            if (!empty($q)) {
+                $conditions = ['OR' => [
+                    'Users.first_name like' => '%' . $q . '%',
+                    'Users.last_name like' => '%' . $q . '%',
+                    'Users.identifier like' => '%' . $q . '%',
+                    'Users.address like' => '%' . $q . '%',
+                    'Users.role like' => '%' . $q . '%',
+                    'Users.email like' => '%' . $q . '%'
                 ]];
 
-                $users = $this->paginate($this->Users->find('all',['conditions'=> $conditions ]));
+                $users = $this->paginate($this->Users->find('all', ['conditions' => $conditions]));
             }
         } else {
             $users = $this->paginate($this->Users);
@@ -121,38 +121,29 @@ class UsersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
-
     }
-        public function beforeFilter(\Cake\Event\EventInterface $event)
-        {
-            parent::beforeFilter($event);
-            // Configure the login action to not require authentication, preventing
-            // the infinite redirect loop issue
-            //$this->Authentication->addUnauthenticatedActions(['login', 'add']);
-        }
-
-    
-        public function login()
-{
-            $this->request->allowMethod(['get', 'post']);
-            $result = $this->Authentication->getResult();
-            // regardless of POST or GET, redirect if user is logged in
-            if ($result && $result->isValid()) {
-            //     // redirect to /articles after login success
-                $redirect = $this->request->getQuery('redirect', [
-                     'controller' => 'Articles',
-                     'action' => 'index',
-               ]);
-        
-                 return $this->redirect($redirect);
-            }
-            // display error if user submitted and authentication failed
-            if ($this->request->is('post') && !$result->isValid()) {
-                $this->Flash->error(__('Invalid username or password'));
-
-            }
-            
-
-        }
-    
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        // Configure the login action to not require authentication, preventing
+        // the infinite redirect loop issue
+        $this->Authentication->addUnauthenticatedActions(['login', 'add']);
     }
+
+
+    public function login()
+    {
+        $this->request->allowMethod(['get', 'post']);
+        $result = $this->Authentication->getResult();
+        // If the user is logged in send them away.
+        if ($result->isValid()) {
+            $target = $this->Authentication->getLoginRedirect() ?? '/';
+
+            return $this->redirect($target);
+        }
+        // display error if user submitted and authentication failed
+        if ($this->request->is('post') && !$result->isValid()) {
+            $this->Flash->error(__('Invalid username or password'));
+        }
+    }
+}
