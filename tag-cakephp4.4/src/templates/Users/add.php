@@ -24,7 +24,7 @@
                    // echo $this->Form->control('unit');
                     echo $this->Form->control('role');
                     echo $this->Form->control('identifier');
-                    echo $this->Form->control('email');
+                    echo $this->Form->control('email', ['placeholder'=>'Valid email address eg. jsmith@sgu.edu']);
                     echo $this->Form->control('address'); 
               
 
