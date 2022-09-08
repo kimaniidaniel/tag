@@ -69,6 +69,11 @@ class UsersController extends AppController
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+            if (!filter_var($user->email, FILTER_VALIDATE_EMAIL) || !str_ends_with($user->email,"@sgu.edu")) {
+                //inValid email!
+                $this->Flash->error(__('The email address is not valid.'));
+                return;
+            }
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
