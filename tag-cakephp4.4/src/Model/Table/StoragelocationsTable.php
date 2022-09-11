@@ -80,10 +80,10 @@ class StoragelocationsTable extends Table
             ->requirePresence('address', 'create')
             ->notEmptyString('address');
 
-        $validator
-            ->scalar('description')
-            ->requirePresence('description', 'create')
-            ->notEmptyString('description');
+        // $validator
+        //     ->scalar('description')
+        //     ->requirePresence('description', 'create')
+        //     ->notEmptyString('description');
 
         $validator
             ->dateTime('updated_at')

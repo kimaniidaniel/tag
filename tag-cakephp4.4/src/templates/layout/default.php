@@ -40,7 +40,7 @@ $cakeDescription = 'TAG: we will store and track your bags safely';
 <body>
     <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Tag</span> 1.0</a>
+            <a href="<?= $this->Url->build('/') ?>"><span>TAGandSTORE</span> 1.0</a>
         </div>
         <div class="top-nav-links">
             <i class="fa fa-boxes"></i><a href="<?= $this->Url->build('/inventory') ?>"><span>Inventory</span></a> &nbsp;

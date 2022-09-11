@@ -33,15 +33,6 @@ class Inventory extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'name' => true,
-        'storageunit_id' => true,
-        'user_id' => true,
-        'description' => true,
-        'number_of_items' => true,
-        'arival_date' => true,
-        'departure_date' => true,
-        'updated_at' => true,
-        'storageunit' => true,
-        'user' => true,
+        '*' => true
     ];
 }

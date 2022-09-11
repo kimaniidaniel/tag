@@ -30,12 +30,6 @@ class Storagelocation extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'user_id' => true,
-        'name' => true,
-        'address' => true,
-        'description' => true,
-        'updated_at' => true,
-        'user' => true,
-        'storageunits' => true,
+        '*' => true
     ];
 }

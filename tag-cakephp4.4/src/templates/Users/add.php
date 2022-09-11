@@ -23,10 +23,9 @@
                     echo $this->Form->control('password');
                    // echo $this->Form->control('unit');
                     echo $this->Form->control('role');
-                    echo $this->Form->control('identifier');
+                    echo $this->Form->control('identifier', ['placeholder'=>'please enter you ID number']);
                     echo $this->Form->control('email', ['placeholder'=>'Valid email address eg. jsmith@sgu.edu']);
-                    echo $this->Form->control('address'); 
-              
+                    // echo $this->Form->control('address');
 
                 ?>
             </fieldset>

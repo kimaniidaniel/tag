@@ -22,6 +22,7 @@
                     echo $this->Form->control('storagelocation_id', ['options' => $storagelocations]);
                     echo $this->Form->control('name');
                     echo $this->Form->control('identifier');
+                     echo $this->Form->control('description');
                     echo $this->Form->control('user_id', ['options' => $users]);
                     // echo $this->Form->control('updated_at');
                 ?>
