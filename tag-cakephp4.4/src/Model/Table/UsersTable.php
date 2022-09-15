@@ -104,11 +104,11 @@ class UsersTable extends Table
             ->requirePresence('email', 'create')
             ->notEmptyString('email');
 
-        $validator
-            ->scalar('address')
-            ->maxLength('address', 50)
-            ->requirePresence('address', 'create')
-            ->notEmptyString('address');
+        // $validator
+        //     ->scalar('address')
+        //     ->maxLength('address', 50)
+        //     ->requirePresence('address', 'create')
+        //     ->notEmptyString('address');
 
         return $validator;
     }
