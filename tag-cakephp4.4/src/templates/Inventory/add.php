@@ -21,7 +21,7 @@
                 <?php
                     echo $this->Form->control('name');
                     echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
-                    // echo $this->Form->control('user_id');
+                    echo $this->Form->control('user_id');
                     echo $this->Form->control('description');
                     // echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
