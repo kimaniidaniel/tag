@@ -23,7 +23,7 @@
                     echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
                     echo $this->Form->control('user', ['options' => $users]);
                     echo $this->Form->control('description');
-                    echo $this->Form->control('period');
+                    // echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arival_date');
