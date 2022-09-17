@@ -101,10 +101,10 @@ class InventoryTable extends Table
             ->requirePresence('arival_date', 'create')
             ->notEmptyDate('arival_date');
 
-        $validator
-            ->date('period')
-            ->requirePresence('period', 'create')
-            ->notEmptyDate('period');
+        // $validator
+        //     ->date('period')
+        //     ->requirePresence('period', 'create')
+        //     ->notEmptyDate('period');
 
         $validator
             ->dateTime('updated_at')
