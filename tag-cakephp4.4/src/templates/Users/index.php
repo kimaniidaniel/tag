@@ -22,7 +22,7 @@
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('identifier') ?></th>
+                    <th><?= $this->Paginator->sort('id_number') ?></th>
                     <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('first_name','Name') ?></th>
                     <!-- <th><?= $this->Paginator->sort('first_name') ?></th>
@@ -38,7 +38,7 @@
             <tbody>
                 <?php foreach ($users as $user): ?>
                 <tr>
-                    <td><?= h($user->identifier) ?></td>
+                    <td><?= h($user->id_number) ?></td>
                     <!-- <td><?= $this->Number->format($user->id) ?></td> -->
                     <td><?= $this->Html->link(h($user->first_name)." ".h($user->last_name), ['action' => 'view', $user->id]) ?></td>
                     <!-- <td><?= h($user->first_name) ?></td> -->

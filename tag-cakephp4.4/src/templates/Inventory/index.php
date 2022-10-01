@@ -27,6 +27,7 @@
                     <!-- <th><?= $this->Paginator->sort('storageunit_id') ?></th> -->
                     <th><?= $this->Paginator->sort('user') ?></th>
                     <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
+                    <th><?= $this->Paginator->sort('storagelocation_id') ?></th>
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
                     <th><?= $this->Paginator->sort('arival_date') ?></th>
@@ -42,6 +43,7 @@
                     <!-- <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td> -->
                     <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
                     <!-- <td><?= h($inventory->description) ?></td> -->
+                    <td><?= h($inventory->storagelocation_id) ?></td>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>

@@ -4,6 +4,8 @@
  * @var \App\Model\Entity\Inventory $inventory
  * @var \Cake\Collection\CollectionInterface|string[] $storageunits
  * @var \Cake\Collection\CollectionInterface|string[] $users
+ * @var \Cake\Collection\CollectionInterface|string[] $storagelocations
+ * 
  */
 ?>
 <div class="row">
@@ -23,7 +25,8 @@
                     echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
                     echo $this->Form->control('user_id');
                     echo $this->Form->control('description');
-                    // echo $this->Form->control('period');
+                    echo $this->Form->control('storagelocation_id', ['options' =>$storagelocations]);
+                //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arival_date');

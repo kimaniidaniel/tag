@@ -34,12 +34,12 @@ class InventoryController extends AppController
                     'Inventory.description like'=>'%'.$q.'%',
                     'Users.first_name like'=>'%'.$q.'%',
                     'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
+                    'Users.id_number like'=>'%'.$q.'%',
                     'Users.address like'=>'%'.$q.'%',
                     'Users.email like'=>'%'.$q.'%',
                     'Users.role like'=>'%'.$q.'%',
                     'Storageunits.name like'=>'%'.$q.'%',
-                    'Storageunits.identifier like'=>'%'.$q.'%',
+                    'Storageunits.id_number like'=>'%'.$q.'%',
                 ]];
 
                 $inventory = $this->paginate($this->Inventory->find('all',['conditions'=> $conditions ]));
@@ -85,7 +85,7 @@ class InventoryController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
-            //debug($inventory);
+            debug($inventory);
         }
         $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
         // $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
