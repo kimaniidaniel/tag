@@ -97,6 +97,8 @@ class InventoryController extends AppController
             ];
         });
 
+        //https://book.cakephp.org/4/en/views/helpers/form.html#options-for-select-checkbox-and-radio-controls
+        //https://book.cakephp.org/4/en/views/helpers/form.html#using-collections-to-build-options
         $storageLocations = $this->fetchTable("StorageLocations")->find()->select(['id','name','address'])->map(function($value, $key){
             return [
                 'value' => $value->id, 'text' => $value->name . ' - ' . $value->address
