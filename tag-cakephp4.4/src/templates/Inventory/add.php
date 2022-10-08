@@ -30,8 +30,7 @@
                     echo $this->Form->control('number_of_items');
                     echo $this->Form->select('Please_select_a_time',
                         ['fields'=>
-                        "5:00 pm", "5:15 pm", "5:30 pm", "5:45 pm", "6:00 pm",
-                        'empty' => '(choose one)']);
+                        "5:00 pm", "5:15 pm", "5:30 pm", "5:45 pm", "6:00 pm"]);
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arival_date');
                     echo $this->Form->control('updated_at');        
