@@ -29,6 +29,7 @@
                     <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
                     <th><?= $this->Paginator->sort('storagelocation_id') ?></th>
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
+                    <th><?= $this->Paginator->sort('Please select a time slot') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
                     <th><?= $this->Paginator->sort('arival_date') ?></th>
                     <th><?= $this->Paginator->sort('updated_at') ?></th>

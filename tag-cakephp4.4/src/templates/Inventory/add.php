@@ -28,6 +28,11 @@
                     echo $this->Form->control('storagelocation_id', ['options' =>$storageLocations]);
                 //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
+                    echo $this->Form->select(
+                        'field',
+                        ["5:00pm", "5:15pm", "5:30pm", "5:45pm", "6:00pm"],
+                        ['empty' => '(choose one)']
+                    );
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arival_date');
                     echo $this->Form->control('updated_at');        
