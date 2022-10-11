@@ -28,7 +28,7 @@
                     echo $this->Form->control('storagelocation_id', ['options' =>$storageLocations]);
                 //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
-                    echo $this->Form->control('Please_select_a_time',
+                    echo $this->Form->control('Please_select_a_time', //<--this should be 'Timeslot'. this first parameter is the frield name
                         ['options'=>
                         ["5:00 pm", "5:15 pm", "5:30 pm", "5:45 pm", "6:00 pm"]], ['label'=>'Time?']);
                     echo $this->Form->control('departure_date');
