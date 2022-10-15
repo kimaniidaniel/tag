@@ -56,7 +56,7 @@ echo $qrCodeUrl;
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                 </tr>
                 <tr>
-                <th><?= __('Please select a time') ?></th>
+                <th><?= __('Timeslot') ?></th>
                     <td><?= $this->Number->format($Timeslot) ?></td>
                 </tr>
                 <tr>
