@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Inventory[]|\Cake\Collection\CollectionInterface $inventory
  */
+use Cake\I18n\FrozenTime;
 ?>
 <div class="inventory index content">
     <?= $this->Html->link(__('New Inventory'), ['action' => 'add'], ['class' => 'button float-right']) ?>
@@ -22,12 +23,11 @@
         <table>
             <thead>
                 <tr>
-                    <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('name') ?></th>
-                    <!-- <th><?= $this->Paginator->sort('storageunit_id') ?></th> -->
                     <th><?= $this->Paginator->sort('user') ?></th>
-                    <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
+                    <th><?= $this->Paginator->sort('storagelocation_id') ?></th>
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
+                    <th><?= $this->Paginator->sort('Timeslot') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
                     <th><?= $this->Paginator->sort('arival_date') ?></th>
                     <th><?= $this->Paginator->sort('updated_at') ?></th>
@@ -36,13 +36,13 @@
             </thead>
             <tbody>
                 <?php foreach ($inventory as $inventory): ?>
+                <?php $timeslot = new FrozenTime($inventory->timeslot); ?>
                 <tr>
-                    <!-- <td><?= $this->Number->format($inventory->id) ?></td> -->
                     <td><?= h($inventory->name) ?></td>
-                    <!-- <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td> -->
                     <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
-                    <!-- <td><?= h($inventory->description) ?></td> -->
+                    <td><?= h($inventory->storagelocation_id) ?></td>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
+                    <td><?= $timeslot->i18nFormat('h:mm a') ?></td>
                     <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
                     <td><?= h($inventory->updated_at) ?></td>
