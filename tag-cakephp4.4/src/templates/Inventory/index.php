@@ -39,7 +39,7 @@ use Cake\I18n\FrozenTime;
                 <?php $timeslot = new FrozenTime($inventory->timeslot); ?>
                 <tr>
                     <td><?= h($inventory->name) ?></td>
-                    <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
+                    <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->username, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
                     <td><?= h($inventory->storagelocation_id) ?></td>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= $timeslot->i18nFormat('h:mm a') ?></td>
