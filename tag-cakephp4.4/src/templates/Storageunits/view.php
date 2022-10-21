@@ -7,13 +7,13 @@
 
 <?php
 //https://book.cakephp.org/4/en/views/helpers/url.html
-$thisStoragesUnitItem = $this->Url->build([
+$thisStorageUnit = $this->Url->build([
     'controller' => 'Storageunit',
     'action' => 'view',
     $storageunit->id,
 ], ['fullBase' => true]);
 
-$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisStoragesUnitItem ;
+$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisStorageUnit ;
 echo $qrCodeUrl;
 ?>
 <div class="row">
