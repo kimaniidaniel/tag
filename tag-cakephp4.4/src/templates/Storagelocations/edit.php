@@ -25,8 +25,8 @@
                 <?php
                     echo $this->Form->control('user_id', ['options' => $users]);
                     echo $this->Form->control('name');
-                    echo $this->Form->control('address');
-                    echo $this->Form->control('description');
+                    // echo $this->Form->control('address');
+                    // echo $this->Form->control('description');
                     echo $this->Form->control('updated_at');
                 ?>
             </fieldset>

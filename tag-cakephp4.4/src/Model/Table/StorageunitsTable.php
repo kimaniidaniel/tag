@@ -78,11 +78,11 @@ class StorageunitsTable extends Table
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
-        $validator
-            ->scalar('identifier')
-            ->maxLength('identifier', 60)
-            ->requirePresence('identifier', 'create')
-            ->notEmptyString('identifier');
+        // $validator
+        //     ->scalar('identifier')
+        //     ->maxLength('identifier', 60)
+        //     ->requirePresence('identifier', 'create')
+        //     ->notEmptyString('identifier');
 
                $validator
             ->scalar('description')

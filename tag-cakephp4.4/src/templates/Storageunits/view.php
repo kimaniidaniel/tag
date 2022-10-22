@@ -29,6 +29,7 @@ echo $qrCodeUrl;
     <div class="column-responsive column-80">
         <div class="storageunits view content">
             <h3><?= h($storageunit->name) ?> (<?= $this->Number->format($storageunit->id) ?>)</h3>
+            <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
                     <th><?= __('Storagelocation') ?></th>

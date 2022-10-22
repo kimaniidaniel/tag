@@ -86,7 +86,7 @@ class StorageunitsController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storageunit could not be saved. Please, try again.'));
-        } //debug($storageunit);
+        } debug($storageunit);
         $storagelocations = $this->Storageunits->Storagelocations->find('list', ['limit' => 200])->all();
         // $users = $this->Storageunits->Users->find('list', ['limit' => 200])->all();
         $users = $this->Storageunits->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){

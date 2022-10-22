@@ -86,7 +86,7 @@ class StoragelocationsController extends AppController
             }
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
         } 
-            //debug($storagelocation);
+            debug($storagelocation);
         $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
         $users = $this->Storagelocations->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
             return [

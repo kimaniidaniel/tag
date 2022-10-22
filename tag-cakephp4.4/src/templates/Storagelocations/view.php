@@ -28,8 +28,8 @@
                     <td><?= h($storagelocation->name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Address') ?></th>
-                    <td><?= h($storagelocation->address) ?></td>
+                    <!-- <th><?= __('Address') ?></th>
+                    <td><?= h($storagelocation->address) ?></td> -->
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>
@@ -40,12 +40,12 @@
                     <td><?= h($storagelocation->updated_at) ?></td>
                 </tr>
             </table>
-            <div class="text">
+            <!-- <div class="text">
                 <strong><?= __('Description') ?></strong>
                 <blockquote>
                     <?= $this->Text->autoParagraph(h($storagelocation->description)); ?>
                 </blockquote>
-            </div>
+            </div> -->
             <div class="related">
                 <h4><?= __('Related Storageunits') ?></h4>
                 <?php if (!empty($storagelocation->storageunits)) : ?>
