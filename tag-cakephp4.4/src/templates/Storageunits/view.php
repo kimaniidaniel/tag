@@ -4,6 +4,19 @@
  * @var \App\Model\Entity\Storageunit $storageunit
  */
 ?>
+
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisStorageUnit = $this->Url->build([
+    'controller' => 'Storageunit',
+    'action' => 'view',
+    $storageunit->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisStorageUnit ;
+echo $qrCodeUrl;
+?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
