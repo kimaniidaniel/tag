@@ -29,6 +29,7 @@ echo $qrCodeUrl;
     <div class="column-responsive column-80">
         <div class="inventory view content">
             <h3><?= h($inventory->name) ?></h3>
+            <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
                     <th><?= __('Name') ?></th>
