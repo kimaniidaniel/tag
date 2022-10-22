@@ -26,10 +26,10 @@
                     <th><?= __('Last Name') ?></th>
                     <td><?= h($user->last_name) ?></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><?= __('Username') ?></th>
                     <td><?= h($user->username) ?></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th><?= __('Role') ?></th>
                     <td><?= h($user->role) ?></td>
