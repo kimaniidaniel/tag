@@ -4,6 +4,18 @@
  * @var \App\Model\Entity\Inventory $inventory
  */
 ?>
+
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisInventoryItem = $this->Url->build([
+    'controller' => 'Inventory',
+    'action' => 'view',
+    $inventory->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
+echo $qrCodeUrl;
+?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
