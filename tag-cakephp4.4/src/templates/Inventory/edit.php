@@ -29,7 +29,7 @@
                     echo $this->Form->control('user', ['options' => $users]);
                     echo $this->Form->control('description');
                     echo $this->Form->control('number_of_items');
-                    echo $this->Form->control('Timeslot');
+                    echo $this->Form->control('timeslot');
                     echo $this->Form->control('arival_date');
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('updated_at');

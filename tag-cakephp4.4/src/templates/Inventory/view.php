@@ -14,7 +14,7 @@ $thisInventoryItem = $this->Url->build([
 ], ['fullBase' => true]);
 
 $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
-echo $qrCodeUrl;
+// echo $qrCodeUrl;
 ?>
 <div class="row">
     <aside class="column">
@@ -57,7 +57,7 @@ echo $qrCodeUrl;
                 </tr>
                 <tr>
                 <th><?= __('Timeslot') ?></th>
-                    <td><?= $this->Number->format($Timeslot) ?></td>
+                    <td><?= $this->Number->format($timeslot) ?></td>
                 </tr>
                 <tr>
                 <th><?= __('Departure Date') ?></th>
