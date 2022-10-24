@@ -57,15 +57,15 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 </tr>
                 <tr>
                 <th><?= __('Timeslot') ?></th>
-                    <td><?= $this->Number->format($timeslot) ?></td>
+                    <td><?= $this->Number->format($inventory->timeslot) ?></td>
                 </tr>
                 <tr>
                 <th><?= __('Departure Date') ?></th>
                     <td><?= h($inventory->departure_date) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Departure Date') ?></th>
-                    <td><?= h($inventory->departure_date) ?></td>
+                    <th><?= __('Arrival Date') ?></th>
+                    <td><?= h($inventory->arrival_date) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>
