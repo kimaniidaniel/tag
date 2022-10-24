@@ -55,7 +55,7 @@
                             <th><?= __('Id') ?></th>
                             <th><?= __('Storagelocation Id') ?></th>
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Identifier') ?></th>
+                            <th><?= __('Id_number') ?></th>
                             <th><?= __('User Id') ?></th>
                             <th><?= __('Updated At') ?></th>
                             <th class="actions"><?= __('Actions') ?></th>
@@ -65,7 +65,7 @@
                             <td><?= h($storageunits->id) ?></td>
                             <td><?= h($storageunits->storagelocation_id) ?></td>
                             <td><?= h($storageunits->name) ?></td>
-                            <td><?= h($storageunits->identifier) ?></td>
+                            <td><?= h($storageunits->id_number) ?></td>
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
                             <td class="actions">

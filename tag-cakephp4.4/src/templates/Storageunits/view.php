@@ -14,7 +14,7 @@ $thisStorageUnit = $this->Url->build([
 ], ['fullBase' => true]);
 
 $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisStorageUnit ;
-echo $qrCodeUrl;
+// echo $qrCodeUrl;
 ?>
 <div class="row">
     <aside class="column">
@@ -28,7 +28,7 @@ echo $qrCodeUrl;
     </aside>
     <div class="column-responsive column-80">
         <div class="storageunits view content">
-            <h3><?= h($storageunit->name) ?> (<?= $this->Number->format($storageunit->id) ?>)</h3>
+            <h3><?= h($storageunit->name) ?></h3>
             <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
@@ -40,8 +40,8 @@ echo $qrCodeUrl;
                     <td><?= h($storageunit->name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Identifier') ?></th>
-                    <td><?= h($storageunit->identifier) ?></td>
+                    <th><?= __('id_number') ?></th>
+                    <td><?= h($storageunit->id_number) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('User') ?></th>

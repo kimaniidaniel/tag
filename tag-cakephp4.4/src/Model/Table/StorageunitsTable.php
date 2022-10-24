@@ -84,10 +84,10 @@ class StorageunitsTable extends Table
         //     ->requirePresence('identifier', 'create')
         //     ->notEmptyString('identifier');
 
-               $validator
-            ->scalar('description')
-            ->requirePresence('description', 'create')
-            ->notEmptyString('description');
+            //    $validator
+            // ->scalar('description')
+            // ->requirePresence('description', 'create')
+            // ->notEmptyString('description');
 
         $validator
             ->integer('user_id')

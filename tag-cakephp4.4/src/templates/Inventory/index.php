@@ -47,8 +47,8 @@
                     <td><?= h($inventory->storagelocation_id) ?></td>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= h($inventory->timeslot) ?></td>
-                    <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
+                    <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->updated_at) ?></td>
                     <td class="actions">
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $inventory->id], ['escape' => false]) ?>
