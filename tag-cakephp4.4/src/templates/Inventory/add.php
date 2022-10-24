@@ -25,6 +25,8 @@
                     echo $this->Form->control('description');
                     // echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
+                    //https://book.cakephp.org/4/en/views/helpers/form.html#creating-select-pickers
+                    //you need to specify the values also, you specivied the lables on the options
                     echo $this->Form->control('Timeslot', 
                         ['options'=>
                         ["5:00 pm", "5:15 pm", "5:30 pm", "5:45 pm", "6:00 pm"]], ['label'=>'Time?']);
