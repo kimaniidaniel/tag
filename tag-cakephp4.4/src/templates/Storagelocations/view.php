@@ -69,9 +69,9 @@
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
                             <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Storageunits', 'action' => 'view', $storageunits->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Storageunits', 'action' => 'edit', $storageunits->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Storageunits', 'action' => 'delete', $storageunits->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storageunits->id)]) ?>
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storagelocation->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storagelocation->id)]) ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
