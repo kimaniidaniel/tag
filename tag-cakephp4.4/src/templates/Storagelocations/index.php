@@ -25,7 +25,7 @@
                     <th><?= $this->Paginator->sort('id') ?></th>
                     <th><?= $this->Paginator->sort('user_id') ?></th>
                     <th><?= $this->Paginator->sort('name') ?></th>
-                    <th><?= $this->Paginator->sort('address') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('address') ?></th> -->
                     <th><?= $this->Paginator->sort('updated_at') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -38,7 +38,7 @@
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->
                     <td><?= h($storagelocation->name) ?></td>
-                    <td><?= h($storagelocation->address) ?></td>
+                    <!-- <td><?= h($storagelocation->address) ?></td> -->
                     <td><?= h($storagelocation->updated_at) ?></td>
                     <td class="actions">
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storagelocation->id], ['escape' => false]) ?>

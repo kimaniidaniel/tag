@@ -35,17 +35,17 @@
                     <td><?= h($user->role) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Identifier') ?></th>
-                    <td><?= h($user->identifier) ?></td>
+                    <th><?= __('id_number') ?></th>
+                    <td><?= h($user->id_number) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Email') ?></th>
                     <td><?= h($user->email) ?></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><?= __('Address') ?></th>
                     <td><?= h($user->address) ?></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
@@ -57,33 +57,33 @@
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
+                            <!-- <th><?= __('Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Storageunit Id') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <!-- <th><?= __('Storageunit Id') ?></th> -->
+                            <!-- <th><?= __('User Id') ?></th> -->
                             <th><?= __('Description') ?></th>
                             <th><?= __('Number Of Items') ?></th>
-                            <th><?= __('Arival Date') ?></th>
                             <th><?= __('Departure Date') ?></th>
+                            <th><?= __('Arival Date') ?></th>
                             <th><?= __('Updated At') ?></th>
-                            <th class="actions"><?= __('Actions') ?></th>
+                            <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($user->inventory as $inventory) : ?>
                         <tr>
-                            <td><?= h($inventory->id) ?></td>
+                            <!-- <td><?= h($inventory->id) ?></td> -->
                             <td><?= h($inventory->name) ?></td>
-                            <td><?= h($inventory->storageunit_id) ?></td>
-                            <td><?= h($inventory->user_id) ?></td>
+                            <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
+                            <!-- <td><?= h($inventory->user_id) ?></td> -->
                             <td><?= h($inventory->description) ?></td>
                             <td><?= h($inventory->number_of_items) ?></td>
-                            <td><?= h($inventory->arival_date) ?></td>
                             <td><?= h($inventory->departure_date) ?></td>
+                            <td><?= h($inventory->arival_date) ?></td>
                             <td><?= h($inventory->updated_at) ?></td>
-                            <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Inventory', 'action' => 'view', $inventory->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Inventory', 'action' => 'edit', $inventory->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Inventory', 'action' => 'delete', $inventory->id], ['confirm' => __('Are you sure you want to delete # {0}?', $inventory->id)]) ?>
-                            </td>
+                            <!-- <td class="actions">
+                                <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $inventory->id], ['escape' => false]) ?>
+                                <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $inventory->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $inventory->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $inventory->id)]) ?>
+                            </td> -->
                         </tr>
                         <?php endforeach; ?>
                     </table>
@@ -96,27 +96,27 @@
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <!-- <th><?= __('Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Address') ?></th>
-                            <th><?= __('Description') ?></th>
+                            <th><?= __('User Id') ?></th>
+                            <!-- <th><?= __('Address') ?></th> -->
+                            <!-- <th><?= __('Description') ?></th> -->
                             <th><?= __('Updated At') ?></th>
-                            <th class="actions"><?= __('Actions') ?></th>
+                            <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($user->storagelocations as $storagelocations) : ?>
                         <tr>
-                            <td><?= h($storagelocations->id) ?></td>
-                            <td><?= h($storagelocations->user_id) ?></td>
+                            <!-- <td><?= h($storagelocations->id) ?></td> -->
                             <td><?= h($storagelocations->name) ?></td>
-                            <td><?= h($storagelocations->address) ?></td>
-                            <td><?= h($storagelocations->description) ?></td>
+                            <td><?= h($storagelocations->user_id) ?></td>
+                            <!-- <td><?= h($storagelocations->address) ?></td> -->
+                            <!-- <td><?= h($storagelocations->description) ?></td> -->
                             <td><?= h($storagelocations->updated_at) ?></td>
-                            <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Storagelocations', 'action' => 'view', $storagelocations->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Storagelocations', 'action' => 'edit', $storagelocations->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Storagelocations', 'action' => 'delete', $storagelocations->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storagelocations->id)]) ?>
-                            </td>
+                            <!-- <td class="actions">
+                                <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storagelocations->id], ['escape' => false]) ?>
+                                <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storagelocations->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storagelocations->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storagelocations->id)]) ?>
+                            </td> -->
                         </tr>
                         <?php endforeach; ?>
                     </table>
@@ -129,27 +129,27 @@
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
-                            <th><?= __('Storagelocation Id') ?></th>
+                            <!-- <th><?= __('Id') ?></th> -->
+                            <!-- <th><?= __('Storagelocation Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Identifier') ?></th>
                             <th><?= __('User Id') ?></th>
+                            <!-- <th><?= __('id_number') ?></th> -->
                             <th><?= __('Updated At') ?></th>
-                            <th class="actions"><?= __('Actions') ?></th>
+                            <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($user->storageunits as $storageunits) : ?>
                         <tr>
-                            <td><?= h($storageunits->id) ?></td>
-                            <td><?= h($storageunits->storagelocation_id) ?></td>
+                            <!-- <td><?= h($storageunits->id) ?></td> -->
+                            <!-- <td><?= h($storageunits->storagelocation_id) ?></td> -->
                             <td><?= h($storageunits->name) ?></td>
-                            <td><?= h($storageunits->identifier) ?></td>
+                            <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
-                            <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Storageunits', 'action' => 'view', $storageunits->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Storageunits', 'action' => 'edit', $storageunits->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Storageunits', 'action' => 'delete', $storageunits->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storageunits->id)]) ?>
-                            </td>
+                            <!-- <td class="actions">
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storageunits->id], ['escape' => false]) ?>
+                                <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunits->id], ['escape' => false]) ?>
+                                <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storageunits->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storageunits->id)]) ?>
+                            </td> -->
                         </tr>
                         <?php endforeach; ?>
                     </table>

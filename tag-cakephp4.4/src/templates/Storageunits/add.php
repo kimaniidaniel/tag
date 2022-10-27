@@ -20,9 +20,9 @@
                 <legend><?= __('Add Storageunit') ?></legend>
                 <?php
                     echo $this->Form->control('storagelocation_id', ['options' => $storagelocations]);
-                    echo $this->Form->control('name');
-                    echo $this->Form->control('identifier');
-                     echo $this->Form->control('description');
+                    echo $this->Form->control('name',['placeholder'=>'Cage number']);
+                    echo $this->Form->control('id_number', ['placeholder'=>'please enter you ID number']);
+                    //  echo $this->Form->control('description');
                     echo $this->Form->control('user_id', ['options' => $users]);
                     // echo $this->Form->control('updated_at');
                 ?>

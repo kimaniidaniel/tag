@@ -94,10 +94,10 @@ class UsersTable extends Table
             ->notEmptyString('role');
 
         $validator
-            ->scalar('identifier')
-            ->maxLength('identifier', 20)
-            ->requirePresence('identifier', 'create')
-            ->notEmptyString('identifier');
+            ->scalar('id_number')
+            ->maxLength('id_number', 20)
+            ->requirePresence('id_number', 'create')
+            ->notEmptyString('id_number');
 
         $validator
             ->email('email')
@@ -124,6 +124,7 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['username']), ['errorField' => 'username']);
         $rules->add($rules->isUnique(['email']), ['errorField' => 'email']);
+        $rules->add($rules->isUnique(['id_number']), ['errorField' => 'id_number']);
 
         return $rules;
     }

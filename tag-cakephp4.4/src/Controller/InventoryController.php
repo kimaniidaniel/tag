@@ -34,12 +34,14 @@ class InventoryController extends AppController
                     'Inventory.description like'=>'%'.$q.'%',
                     'Users.first_name like'=>'%'.$q.'%',
                     'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
+                    'Users.id_number like'=>'%'.$q.'%',
                     'Users.address like'=>'%'.$q.'%',
                     'Users.email like'=>'%'.$q.'%',
                     'Users.role like'=>'%'.$q.'%',
                     'Storageunits.name like'=>'%'.$q.'%',
-                    'Storageunits.identifier like'=>'%'.$q.'%',
+                    'Timeslot.name like'=>'%'.$q.'%',
+                    'Storagelocations.name like'=>'%'.$q.'%',
+                    'Storageunits.id_number like'=>'%'.$q.'%',
                 ]];
 
                 $inventory = $this->paginate($this->Inventory->find('all',['conditions'=> $conditions ]));
@@ -87,6 +89,7 @@ class InventoryController extends AppController
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
             //debug($inventory);
         }
+
         $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
         // $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
         $users = $this->Inventory->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
@@ -95,7 +98,15 @@ class InventoryController extends AppController
             ];
         });
 
-        $this->set(compact('inventory', 'storageunits', 'users'));
+        //https://book.cakephp.org/4/en/views/helpers/form.html#options-for-select-checkbox-and-radio-controls
+        //https://book.cakephp.org/4/en/views/helpers/form.html#using-collections-to-build-options
+        $storageLocations = $this->fetchTable("StorageLocations")->find()->select(['id','name','address'])->map(function($value, $key){
+            return [
+                'value' => $value->id, 'text' => $value->name . ' - ' . $value->address
+            ];
+        });
+
+        $this->set(compact('inventory', 'storageunits', 'users','storageLocations'));
     }
 
     /**

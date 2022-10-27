@@ -4,6 +4,7 @@
  * @var \App\Model\Entity\Storagelocation $storagelocation
  */
 ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -27,8 +28,8 @@
                     <td><?= h($storagelocation->name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Address') ?></th>
-                    <td><?= h($storagelocation->address) ?></td>
+                    <!-- <th><?= __('Address') ?></th>
+                    <td><?= h($storagelocation->address) ?></td> -->
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>
@@ -39,12 +40,12 @@
                     <td><?= h($storagelocation->updated_at) ?></td>
                 </tr>
             </table>
-            <div class="text">
+            <!-- <div class="text">
                 <strong><?= __('Description') ?></strong>
                 <blockquote>
                     <?= $this->Text->autoParagraph(h($storagelocation->description)); ?>
                 </blockquote>
-            </div>
+            </div> -->
             <div class="related">
                 <h4><?= __('Related Storageunits') ?></h4>
                 <?php if (!empty($storagelocation->storageunits)) : ?>
@@ -54,7 +55,7 @@
                             <th><?= __('Id') ?></th>
                             <th><?= __('Storagelocation Id') ?></th>
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Identifier') ?></th>
+                            <th><?= __('Id_number') ?></th>
                             <th><?= __('User Id') ?></th>
                             <th><?= __('Updated At') ?></th>
                             <th class="actions"><?= __('Actions') ?></th>
@@ -64,13 +65,13 @@
                             <td><?= h($storageunits->id) ?></td>
                             <td><?= h($storageunits->storagelocation_id) ?></td>
                             <td><?= h($storageunits->name) ?></td>
-                            <td><?= h($storageunits->identifier) ?></td>
+                            <td><?= h($storageunits->id_number) ?></td>
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
                             <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Storageunits', 'action' => 'view', $storageunits->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Storageunits', 'action' => 'edit', $storageunits->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Storageunits', 'action' => 'delete', $storageunits->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storageunits->id)]) ?>
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storagelocation->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storagelocation->id)]) ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>

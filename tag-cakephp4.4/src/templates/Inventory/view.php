@@ -4,18 +4,6 @@
  * @var \App\Model\Entity\Inventory $inventory
  */
 ?>
-
-<?php
-//https://book.cakephp.org/4/en/views/helpers/url.html
-$thisInventoryItem = $this->Url->build([
-    'controller' => 'Inventory',
-    'action' => 'view',
-    $inventory->id,
-], ['fullBase' => true]);
-
-$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
-echo $qrCodeUrl;
-?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -29,7 +17,6 @@ echo $qrCodeUrl;
     <div class="column-responsive column-80">
         <div class="inventory view content">
             <h3><?= h($inventory->name) ?></h3>
-            <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
                     <th><?= __('Name') ?></th>
@@ -56,12 +43,16 @@ echo $qrCodeUrl;
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                 </tr>
                 <tr>
+                <th><?= __('Timeslot') ?></th>
+                    <td><?= $this->Number->format($inventory->timeslot) ?></td>
+                </tr>
+                <tr>
                 <th><?= __('Departure Date') ?></th>
                     <td><?= h($inventory->departure_date) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Departure Date') ?></th>
-                    <td><?= h($inventory->departure_date) ?></td>
+                    <th><?= __('Arrival Date') ?></th>
+                    <td><?= h($inventory->arrival_date) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>

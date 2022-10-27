@@ -74,11 +74,17 @@ class InventoryTable extends Table
             ->requirePresence('storageunit_id', 'create')
             ->notEmptyString('storageunit_id');
 
+            
         $validator
             ->integer('user_id')
             ->requirePresence('user_id', 'create')
             ->notEmptyString('user_id');
 
+        $validator
+            ->integer('storagelocation_id')
+            ->requirePresence('storagelocation_id', 'create')
+            ->notEmptyString('storagelocation_id');
+            
         $validator
             ->scalar('description')
             ->maxLength('description', 100)
@@ -90,6 +96,10 @@ class InventoryTable extends Table
             ->requirePresence('number_of_items', 'create')
             ->notEmptyString('number_of_items');
 
+        $validator
+            ->integer('timeslot')
+            ->requirePresence('timeslot', 'create')
+            ->notEmptyString('timeslot');
 
         $validator
             ->date('departure_date')

@@ -23,7 +23,7 @@
                     echo $this->Form->control('password');
                    // echo $this->Form->control('unit');
                     echo $this->Form->control('role',['placeholder'=>'Staff,Admin,RA']);
-                    echo $this->Form->control('identifier', ['placeholder'=>'please enter you ID number']);
+                    echo $this->Form->control('id_number', ['placeholder'=>'please enter you ID number']);
                     echo $this->Form->control('email', ['placeholder'=>'Valid email address eg. jsmith@sgu.edu']);
                     // echo $this->Form->control('address');
 
