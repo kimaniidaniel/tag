@@ -108,8 +108,8 @@ class InventoryTable extends Table
 
         $validator
             ->date('arrival_date')
-            ->requirePresence('arival_date', 'create')
-            ->notEmptyDate('arival_date');
+            ->requirePresence('arrival_date', 'create')
+            ->notEmptyDate('arrival_date');
 
         // $validator
         //     ->date('period')
