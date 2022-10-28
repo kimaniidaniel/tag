@@ -25,7 +25,7 @@
                     <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('storagelocation_id') ?></th>
                     <th><?= $this->Paginator->sort('name') ?></th>
-                    <th><?= $this->Paginator->sort('id_number') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('id_number') ?></th> -->
                     <th><?= $this->Paginator->sort('user_id') ?></th>
                     <th><?= $this->Paginator->sort('updated_at') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
@@ -37,7 +37,7 @@
                     <!-- <td><?= $this->Number->format($storageunit->id) ?></td> -->
                     <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : $storageunit->storagelocation_id ?></td>
                     <td><?= h($storageunit->name) ?></td>
-                    <td><?= h($storageunit->id_number) ?></td>
+                    <!-- <td><?= h($storageunit->id_number) ?></td> -->
                     <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                     <td><?= h($storageunit->updated_at) ?></td>
                     <td class="actions">

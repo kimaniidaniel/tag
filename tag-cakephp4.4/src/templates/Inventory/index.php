@@ -42,7 +42,6 @@ use Cake\I18n\FrozenTime;
                     <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
                     <!-- <td><?= h($inventory->description) ?></td> -->
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
-                    <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
                     <td><?= h($inventory->arival_date) ?></td>
                     <td><?= h($inventory->updated_at) ?></td>
