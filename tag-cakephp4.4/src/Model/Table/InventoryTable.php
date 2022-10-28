@@ -97,7 +97,7 @@ class InventoryTable extends Table
             ->notEmptyString('number_of_items');
 
         $validator
-            ->integer('timeslot')
+            ->time('timeslot')
             ->requirePresence('timeslot', 'create')
             ->notEmptyString('timeslot');
 
