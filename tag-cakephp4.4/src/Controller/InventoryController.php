@@ -87,7 +87,7 @@ class InventoryController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
-            //debug($inventory);
+            debug($inventory);
         }
 
         $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();

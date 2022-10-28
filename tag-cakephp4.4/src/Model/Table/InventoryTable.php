@@ -107,7 +107,7 @@ class InventoryTable extends Table
             ->notEmptyDate('departure_date');
 
         $validator
-            ->date('arival_date')
+            ->date('arrival_date')
             ->requirePresence('arival_date', 'create')
             ->notEmptyDate('arival_date');
 

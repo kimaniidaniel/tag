@@ -63,7 +63,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= h($inventory->departure_date) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Arrival Date') ?></th>
+                <th><?= __('Arrival Date') ?></th>
                     <td><?= h($inventory->arrival_date) ?></td>
                 </tr>
                 <tr>

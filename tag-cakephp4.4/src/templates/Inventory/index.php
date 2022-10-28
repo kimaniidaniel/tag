@@ -29,7 +29,7 @@ use Cake\I18n\FrozenTime;
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
                     <th><?= $this->Paginator->sort('timeslot') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
-                    <th><?= $this->Paginator->sort('arival_date') ?></th>
+                    <th><?= $this->Paginator->sort('arrival_date') ?></th>
                     <th><?= $this->Paginator->sort('updated_at') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -45,7 +45,7 @@ use Cake\I18n\FrozenTime;
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= h($timeslot) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
-                    <td><?= h($inventory->arival_date) ?></td>
+                    <td><?= h($inventory->arrival_date) ?></td>
                     <td><?= h($inventory->updated_at) ?></td>
                     <td class="actions">
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $inventory->id], ['escape' => false]) ?>
