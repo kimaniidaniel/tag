@@ -35,7 +35,7 @@ class InventoryController extends AppController
                     'Users.first_name like'=>'%'.$q.'%',
                     'first_name like'=>'%'.$q.'%',
                     'last_name like'=>'%'.$q.'%',
-                    'student_id like'=>'%'.$q.'%',
+                    'student.id_number like'=>'%'.$q.'%',
                     'Users.last_name like'=>'%'.$q.'%',
                     'Users.id_number like'=>'%'.$q.'%',
                     'Users.address like'=>'%'.$q.'%',

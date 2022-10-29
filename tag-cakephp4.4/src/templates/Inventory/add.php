@@ -22,12 +22,12 @@
                 <legend><?= __('Add Inventory') ?></legend>
                 <?php
                     echo $this->Form->control('name', ['options'=> $storageLocations]);
-                    echo $this->Form->control('first_name', ['placeholder'=>'first name']);
-                    echo $this->Form->control('last_name', ['placeholder'=>'last name']);
-                    echo $this->Form->control('student_id', ['placeholder'=>'student_id']);
+                    echo $this->Form->control('first_name', ['placeholder'=>'First Name']);
+                    echo $this->Form->control('last_name', ['placeholder'=>'Last Name']);
+                    echo $this->Form->control('student', ['placeholder'=>'Student ID']);
                     // echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
-                    // echo $this->Form->control('user_id');
-                    echo $this->Form->control('description');
+                    echo $this->Form->control('user_id');
+                    echo $this->Form->control('description',['placeholder'=>'Please lsit your items']);
                     // echo $this->Form->control('storagelocation_id', ['options' =>$storageLocations]);
                 //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
@@ -38,7 +38,7 @@
                         "5:45"=>"5:45 pm", "6:00"=>"6:00 pm"]], ['label'=>'Time?']);
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arrival_date');
-                    echo $this->Form->control('updated_at');        
+                    // echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

@@ -82,25 +82,25 @@ class InventoryTable extends Table
             ->notEmptyString('last_name');
 
 
-        $validator
-            ->scalar('student_id')
-            ->maxLength('student_id', 20)
-            ->requirePresence('student_id', 'create')
-            ->notEmptyString('student_id');
+        // $validator
+        //     ->integer('student_id')
+        //     ->maxLength('student_id', 20)
+        //     ->requirePresence('student_id', 'create')
+        //     ->notEmptyString('student_id');
 
 
-        $validator
-            ->scalar('id_number')
-            ->maxLength('id_number', 20)
-            ->requirePresence('id_number', 'create')
-            ->notEmptyString('id_number');
+        // $validator
+        //     ->scalar('id_number')
+        //     ->maxLength('id_number', 20)
+        //     ->requirePresence('id_number', 'create')
+        //     ->notEmptyString('id_number');
 
 
 
-        $validator
-            ->integer('storageunit_id')
-            ->requirePresence('storageunit_id', 'create')
-            ->notEmptyString('storageunit_id');
+        // $validator
+        //     ->integer('storageunit_id')
+        //     ->requirePresence('storageunit_id', 'create')
+        //     ->notEmptyString('storageunit_id');
 
             
         $validator
@@ -108,10 +108,10 @@ class InventoryTable extends Table
             ->requirePresence('user_id', 'create')
             ->notEmptyString('user_id');
 
-        $validator
-            ->integer('storagelocation_id')
-            ->requirePresence('storagelocation_id', 'create')
-            ->notEmptyString('storagelocation_id');
+        // $validator
+        //     ->integer('storagelocation_id')
+        //     ->requirePresence('storagelocation_id', 'create')
+        //     ->notEmptyString('storagelocation_id');
             
         $validator
             ->scalar('description')
