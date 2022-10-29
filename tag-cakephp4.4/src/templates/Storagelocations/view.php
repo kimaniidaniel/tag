@@ -9,16 +9,15 @@
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Storage Location'), ['action' => 'edit', $storagelocation->id], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Storage Location'), ['action' => 'delete', $storagelocation->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storagelocation->id), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Storage Location'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Storage Location'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Edit Storagelocation'), ['action' => 'edit', $storagelocation->id], ['class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Delete Storagelocation'), ['action' => 'delete', $storagelocation->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storagelocation->id), 'class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('List Storagelocations'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('New Storagelocation'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="storagelocations view content">
-            <th><?= __('Storage Location Id') ?></th>
-            <h3><?= h($storagelocation->id) ?></h3>
+            <h3><?= h($storagelocation->name) ?></h3>
             <table>
                 <tr>
                     <th><?= __('User') ?></th>
@@ -32,10 +31,10 @@
                     <!-- <th><?= __('Address') ?></th>
                     <td><?= h($storagelocation->address) ?></td> -->
                 </tr>
-                <tr>
-                    <!-- <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($storagelocation->id) ?></td> -->
-                </tr>
+                <!-- <tr>
+                    <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($storagelocation->id) ?></td>
+                </tr> -->
                 <tr>
                     <th><?= __('Updated At') ?></th>
                     <td><?= h($storagelocation->updated_at) ?></td>
@@ -53,18 +52,20 @@
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <!-- <th><?= __('Id') ?></th> -->
-                            <!-- <th><?= __('Storagelocation Id') ?></th> -->
-                            <th><?= __('Storage Unit') ?></th>
-                            <!-- <th><?= __('Student Name') ?></th> -->
+                            <!-- <th><?= __('Id') ?></th>
+                            <th><?= __('Storagelocation Id') ?></th> -->
+                            <th><?= __('Name') ?></th>
+                            <!-- <th><?= __('Id_number') ?></th> -->
                             <th><?= __('User') ?></th>
                             <th><?= __('Updated At') ?></th>
                             <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($storagelocation->storageunits as $storageunits) : ?>
                         <tr>
-                            <!-- <?= h($storageunits->id) ?>
+                            <!-- <td><?= h($storageunits->id) ?></td>
+                            <td><?= h($storageunits->storagelocation_id) ?></td> -->
                             <td><?= h($storageunits->name) ?></td>
+                            <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
                             <!-- <td class="actions">
