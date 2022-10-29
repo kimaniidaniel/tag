@@ -16,7 +16,7 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="users view content">
-            <h3><?= h($user->id) ?></h3>
+            <!-- <h3><?= h($user->id) ?></h3> -->
             <table>
                 <tr>
                     <th><?= __('First Name') ?></th>
@@ -35,7 +35,7 @@
                     <td><?= h($user->role) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('id_number') ?></th>
+                    <th><?= __('Id Number') ?></th>
                     <td><?= h($user->id_number) ?></td>
                 </tr>
                 <tr>
@@ -47,7 +47,7 @@
                     <td><?= h($user->address) ?></td>
                 </tr> -->
                 <tr>
-                    <th><?= __('Id') ?></th>
+                    <th><?= __('User') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
                 </tr>
             </table>
@@ -60,7 +60,7 @@
                             <!-- <th><?= __('Id') ?></th> -->
                             <th><?= __('Name') ?></th>
                             <!-- <th><?= __('Storageunit Id') ?></th> -->
-                            <!-- <th><?= __('User Id') ?></th> -->
+                            <!-- <th><?= __('User') ?></th> -->
                             <th><?= __('Description') ?></th>
                             <th><?= __('Number Of Items') ?></th>
                             <th><?= __('Departure Date') ?></th>
@@ -98,7 +98,7 @@
                         <tr>
                             <!-- <th><?= __('Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <th><?= __('User') ?></th>
                             <!-- <th><?= __('Address') ?></th> -->
                             <!-- <th><?= __('Description') ?></th> -->
                             <th><?= __('Updated At') ?></th>
@@ -132,7 +132,7 @@
                             <!-- <th><?= __('Id') ?></th> -->
                             <!-- <th><?= __('Storagelocation Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <th><?= __('User') ?></th>
                             <!-- <th><?= __('id_number') ?></th> -->
                             <th><?= __('Updated At') ?></th>
                             <!-- <th class="actions"><?= __('Actions') ?></th> -->

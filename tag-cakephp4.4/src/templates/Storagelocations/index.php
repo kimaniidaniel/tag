@@ -6,7 +6,7 @@
 ?>
 <div class="storagelocations index content">
     <?= $this->Html->link(__('New Storagelocation'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Storagelocations') ?></h3>
+    <h3><?= __('Storage Locations') ?></h3>
     <small>Here you will find the list of storage location in the system</small>
     <div class="table-responsive">
         <?php echo $this->Form->create(); ?>
@@ -22,7 +22,7 @@
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('id') ?></th> -->
                     <th><?= $this->Paginator->sort('user_id') ?></th>
                     <th><?= $this->Paginator->sort('name') ?></th>
                     <!-- <th><?= $this->Paginator->sort('address') ?></th> -->
@@ -33,7 +33,7 @@
             <tbody>
                 <?php foreach ($storagelocations as $storagelocation): ?>
                 <tr>
-                    <td><?= $this->Number->format($storagelocation->id) ?></td>
+                    <!-- <td><?= $this->Number->format($storagelocation->id) ?></td> -->
                     <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->id, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->

@@ -16,7 +16,7 @@
         <div class="storagelocations form content">
             <?= $this->Form->create($storagelocation) ?>
             <fieldset>
-                <legend><?= __('Add Storagelocation') ?></legend>
+                <legend><?= __('Add Storage Location') ?></legend>
                 <?php
                     echo $this->Form->control('user_id', ['options' => $users]);
                     echo $this->Form->control('name', ['placeholder'=>'Storage name']);

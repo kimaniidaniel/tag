@@ -27,7 +27,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
     </aside>
     <div class="column-responsive column-80">
         <div class="storageunits view content">
-            <h3><?= h($storageunit->name) ?> (<?= $this->Number->format($storageunit->id) ?>)</h3>
+            <h3><?= h($storageunit->name) ?></h3>
             <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
@@ -35,12 +35,12 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Name') ?></th>
+                    <th><?= __(' Storage Unit') ?></th>
                     <td><?= h($storageunit->name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('id_number') ?></th>
-                    <td><?= h($storageunit->id_number) ?></td>
+                    <!-- <th><?= __('id_number') ?></th>
+                    <td><?= h($storageunit->id_number) ?></td> -->
                 </tr>
                 <tr>
                     <th><?= __('User') ?></th>
@@ -57,31 +57,31 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
-                            <th><?= __('Storageunit Id') ?></th>
-                            <!-- <th><?= __('User Id') ?></th> -->
+                            <th><?= __('Student Name') ?></th>
+                            <!-- <th><?= __('Storageunit Id') ?></th> -->
+                            <th><?= __('User') ?></th>
                             <th><?= __('Description') ?></th>
                             <th><?= __('Number Of Items') ?></th>
                             <th><?= __('Departure Date') ?></th>
-                            <th><?= __('Arival Date') ?></th>
+                            <th><?= __('Arrival Date') ?></th>
                             <!-- <th><?= __('Updated At') ?></th> -->
-                            <th class="actions"><?= __('Actions') ?></th>
+                            <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($storageunit->inventory as $inventory) : ?>
                         <tr>
-                            <td><?= h($inventory->id) ?></td>
-                            <td><?= h($inventory->storageunit_id) ?></td>
-                            <!-- <td><?= h($inventory->user_id) ?></td> -->
+                            <td><?= h($inventory->name) ?></td>
+                            <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
+                            <td><?= h($inventory->user_id) ?></td>
                             <td><?= h($inventory->description) ?></td>
                             <td><?= h($inventory->number_of_items) ?></td>
-                            <td><?= h($inventory->arival_date) ?></td>
                             <td><?= h($inventory->departure_date) ?></td>
-                            <!-- <td><?= h($inventory->updated_at) ?></td> -->
-                            <td class="actions">
+                            <td><?= h($inventory->arrival_date) ?></td>
+                          <!-- <td><?= h($inventory->updated_at) ?></td> -->
+                            <!-- <td class="actions">
                             <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storageunit->id], ['escape' => false]) ?>
                             <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunit->id], ['escape' => false]) ?>
                             <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storageunit->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storageunit->id)]) ?>
-                            </td>
+                            </td> -->
                         </tr>
                         <?php endforeach; ?>
                     </table>

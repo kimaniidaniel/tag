@@ -97,7 +97,7 @@ class InventoryTable extends Table
             
         $validator
             ->scalar('description')
-            ->maxLength('description', 100)
+            ->maxLength('description', 1000)
             ->requirePresence('description', 'create')
             ->notEmptyString('description');
 
