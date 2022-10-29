@@ -64,18 +64,18 @@ class InventoryTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-            ->scalar('name')
-            ->maxLength('name', 60)
-            ->requirePresence('name', 'create')
-            ->notEmptyString('name');
+            ->scalar('student_name')
+            ->maxLength('student_name', 60)
+            ->requirePresence('student_name', 'create')
+            ->notEmptyString('student_name');
 
 
 
-        // $validator
-        //     ->scalar('id_number')
-        //     ->maxLength('id_number', 20)
-        //     ->requirePresence('id_number', 'create')
-        //     ->notEmptyString('id_number');
+        $validator
+            ->scalar('student_number')
+            ->maxLength('student_number', 20)
+            ->requirePresence('student_number', 'create')
+            ->notEmptyString('student_number');
 
 
 

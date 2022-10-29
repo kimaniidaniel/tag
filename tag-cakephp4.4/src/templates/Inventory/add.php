@@ -21,21 +21,22 @@
             <fieldset>
                 <legend><?= __('Add Inventory') ?></legend>
                 <?php
-                    echo $this->Form->control('Student name', ['placeholder'=>'First/Last Name']);
+                    echo $this->Form->control('student_name', ['placeholder'=>'First/Last Name']);
                     // echo $this->Form->control('first_name', ['placeholder'=>'First Name']);
                     // echo $this->Form->control('last_name', ['placeholder'=>'Last Name']);
-                    echo $this->Form->control('student Id', ['placeholder'=>'Student ID']);
-                    echo $this->Form->control('storage unit', ['options' => $storageunits]);
-                    echo $this->Form->control('user');
+                    echo $this->Form->control('student_number', ['placeholder'=>'student']);
+                    echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
+                    echo $this->Form->control('user_id');
                     echo $this->Form->control('description',['placeholder'=>'Please lsit your items']);
-                    echo $this->Form->control('storage Location', ['options'=>$storageLocations]);                                                                                           
+                    echo $this->Form->control('storagelocation_id', ['options'=>$storageLocations]);                                                                                           
                 //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
                     //https://book.cakephp.org/4/en/views/helpers/form.html#creating-time-controls
                     echo $this->Form->control('timeslot', 
                         ['options'=>
                         ["5:00 pm"=>"5:00 pm", "5:15 pm"=>"5:15 pm", "5:30 pm"=>"5:30 pm", 
-                        "5:45 pm"=>"5:45 pm", "6:00 pm"=>"6:00 pm"]], ['label'=>'Time?']);
+                        "5:45 pm"=>"5:45 pm", "6:00 pm"=>"6:00 pm",
+                        "6:15 pm"=>"6:15 pm", "6:30 pm"=>"6:30 pm", "6:45 pm"=>"6:45 pm","7:00 pm"=>"7:00 pm"]], ['label'=>'timeslot?']);
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arrival_date');
                     echo $this->Form->control('updated_at');        

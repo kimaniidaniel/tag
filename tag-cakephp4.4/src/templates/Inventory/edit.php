@@ -24,9 +24,9 @@
             <fieldset>
                 <legend><?= __('Edit Inventory') ?></legend>
                 <?php
-                    echo $this->Form->control('name');
+                    echo $this->Form->control('student_name');
                     echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
-                    echo $this->Form->control('user', ['options' => $users]);
+                    echo $this->Form->control('user_id', ['options' => $users]);
                     echo $this->Form->control('description');
                     echo $this->Form->control('number_of_items');
                     echo $this->Form->control('timeslot');

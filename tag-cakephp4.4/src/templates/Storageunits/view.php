@@ -69,7 +69,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                         </tr>
                         <?php foreach ($storageunit->inventory as $inventory) : ?>
                         <tr>
-                            <td><?= h($inventory->name) ?></td>
+                            <td><?= h($inventory->student_name) ?></td>
                             <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
                             <td><?= h($inventory->user_id) ?></td>
                             <td><?= h($inventory->description) ?></td>
