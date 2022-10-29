@@ -11,9 +11,9 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property int $storageunit_id
- * @property string $student_first_name
- * @property string $student_last_name
- * @property int $student_id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $student_id
  * @property int $user_id
  * @property string $description
  * @property int $number_of_items

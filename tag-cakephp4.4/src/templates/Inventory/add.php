@@ -22,8 +22,9 @@
                 <legend><?= __('Add Inventory') ?></legend>
                 <?php
                     echo $this->Form->control('name', ['options'=> $storageLocations]);
-                    echo $this->Form->control('student_first_name', ['placeholder'=>'Student first name']);
-                    echo $this->Form->control('student_last_name', ['placeholder'=>'Student last name']);
+                    echo $this->Form->control('first_name', ['placeholder'=>'first name']);
+                    echo $this->Form->control('last_name', ['placeholder'=>'last name']);
+                    echo $this->Form->control('student_id', ['placeholder'=>'student_id']);
                     // echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
                     // echo $this->Form->control('user_id');
                     echo $this->Form->control('description');

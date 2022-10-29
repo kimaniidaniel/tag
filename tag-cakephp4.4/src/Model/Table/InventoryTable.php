@@ -70,16 +70,16 @@ class InventoryTable extends Table
             ->notEmptyString('name');
 
         $validator
-            ->scalar('student_first_name')
-            ->maxLength('student_first_name', 50)
-            ->requirePresence('student_first_name', 'create')
-            ->notEmptyString('student_first_name');
+            ->scalar('first_name')
+            ->maxLength('first_name', 50)
+            ->requirePresence('first_name', 'create')
+            ->notEmptyString('first_name');
 
         $validator
-            ->scalar('student_last_name')
-            ->maxLength('student_last_name', 50)
-            ->requirePresence('student_last_name', 'create')
-            ->notEmptyString('student_last_name');
+            ->scalar('last_name')
+            ->maxLength('last_name', 50)
+            ->requirePresence('last_name', 'create')
+            ->notEmptyString('last_name');
 
 
         $validator
