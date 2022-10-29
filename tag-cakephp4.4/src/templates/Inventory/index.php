@@ -23,7 +23,7 @@ use Cake\I18n\FrozenTime;
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('name') ?></th>
+                    <th><?= $this->Paginator->sort(' student Name') ?></th>
                     <!-- <th><?= $this->Paginator->sort('first_name') ?></th>
                     <th><?= $this->Paginator->sort('last_name') ?></th>
                     <th><?= $this->Paginator->sort('student_id') ?></th> -->
