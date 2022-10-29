@@ -31,8 +31,8 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
             <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <table>
                 <tr>
-                    <th><?= __('Name') ?></th>
-                    <td><?= h($inventory->name) ?></td>
+                    <th><?= __(' Name') ?></th>
+                    <td><?= h($inventory->student_name) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Storageunit') ?></th>

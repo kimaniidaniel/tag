@@ -28,7 +28,7 @@ use Cake\I18n\FrozenTime;
                     <th><?= $this->Paginator->sort('last_name') ?></th> -->
                     <th><?= $this->Paginator->sort('student_number') ?></th>
                     <th><?= $this->Paginator->sort('storageunit') ?></th>
-                    <th><?= $this->Paginator->sort('user_id') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('user') ?></th> -->
                     <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
                     <th><?= $this->Paginator->sort('timeslot') ?></th>
@@ -47,7 +47,7 @@ use Cake\I18n\FrozenTime;
                     <td><?= h($inventory->last_name) ?></td> -->
                     <td><?= h($inventory->student_number) ?></td>
                     <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
-                    <td><?= $inventory->has('user_id') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
+                    <!-- <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td> -->
                     <!-- <td><?= h($inventory->description) ?></td> -->
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
                     <td><?= h($timeslot) ?></td>

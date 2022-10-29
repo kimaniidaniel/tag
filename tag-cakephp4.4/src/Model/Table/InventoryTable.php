@@ -85,10 +85,10 @@ class InventoryTable extends Table
     //         ->notEmptyString('storageunit_id');
 
             
-    //     $validator
-    //         ->integer('user_id')
-    //         ->requirePresence('user_id', 'create')
-    //         ->notEmptyString('user_id');
+        // $validator
+        //     ->integer('user_id')
+        //     ->requirePresence('user_id', 'create')
+        //     ->notEmptyString('user_id');
 
     //     $validator
     //         ->integer('storagelocation_id')
