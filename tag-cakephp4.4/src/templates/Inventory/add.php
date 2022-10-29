@@ -24,10 +24,10 @@
                     echo $this->Form->control('student_name', ['placeholder'=>'First/Last Name']);
                     // echo $this->Form->control('first_name', ['placeholder'=>'First Name']);
                     // echo $this->Form->control('last_name', ['placeholder'=>'Last Name']);
-                    echo $this->Form->control('student_number', ['placeholder'=>'student']);
-                    echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
-                    echo $this->Form->control('user_id');
-                    echo $this->Form->control('description',['placeholder'=>'Please lsit your items']);
+                    echo $this->Form->control('student_number', ['placeholder'=>'ID number']);
+                    // echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
+                    // echo $this->Form->control('user_id');
+                    echo $this->Form->control('description',['placeholder'=>'Please list your items']);
                     echo $this->Form->control('storagelocation_id', ['options'=>$storageLocations]);                                                                                           
                 //  echo $this->Form->control('period');
                     echo $this->Form->control('number_of_items');
@@ -39,7 +39,7 @@
                         "6:15 pm"=>"6:15 pm", "6:30 pm"=>"6:30 pm", "6:45 pm"=>"6:45 pm","7:00 pm"=>"7:00 pm"]], ['label'=>'timeslot?']);
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arrival_date');
-                    echo $this->Form->control('updated_at');        
+                    // echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

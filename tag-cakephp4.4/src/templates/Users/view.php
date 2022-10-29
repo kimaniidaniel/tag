@@ -58,7 +58,7 @@
                     <table>
                         <tr>
                             <!-- <th><?= __('Id') ?></th> -->
-                            <th><?= __('Name') ?></th>
+                            <th><?= __('Student Name') ?></th>
                             <!-- <th><?= __('Storageunit Id') ?></th> -->
                             <!-- <th><?= __('User') ?></th> -->
                             <th><?= __('Description') ?></th>
@@ -71,13 +71,13 @@
                         <?php foreach ($user->inventory as $inventory) : ?>
                         <tr>
                             <!-- <td><?= h($inventory->id) ?></td> -->
-                            <td><?= h($inventory->name) ?></td>
+                            <td><?= h($inventory->student_name) ?></td>
                             <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
                             <!-- <td><?= h($inventory->user_id) ?></td> -->
                             <td><?= h($inventory->description) ?></td>
                             <td><?= h($inventory->number_of_items) ?></td>
                             <td><?= h($inventory->departure_date) ?></td>
-                            <td><?= h($inventory->arival_date) ?></td>
+                            <td><?= h($inventory->arrival_date) ?></td>
                             <td><?= h($inventory->updated_at) ?></td>
                             <!-- <td class="actions">
                                 <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $inventory->id], ['escape' => false]) ?>
@@ -91,7 +91,7 @@
                 <?php endif; ?>
             </div>
             <div class="related">
-                <h4><?= __('Related Storagelocations') ?></h4>
+                <h4><?= __('Related storage locations') ?></h4>
                 <?php if (!empty($user->storagelocations)) : ?>
                 <div class="table-responsive">
                     <table>
@@ -124,7 +124,7 @@
                 <?php endif; ?>
             </div>
             <div class="related">
-                <h4><?= __('Related Storageunits') ?></h4>
+                <h4><?= __('Related storage units') ?></h4>
                 <?php if (!empty($user->storageunits)) : ?>
                 <div class="table-responsive">
                     <table>

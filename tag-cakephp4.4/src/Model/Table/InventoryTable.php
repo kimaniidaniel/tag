@@ -62,73 +62,73 @@ class InventoryTable extends Table
      * @return \Cake\Validation\Validator
      */
     public function validationDefault(Validator $validator): Validator
-    {
-        $validator
-            ->scalar('student_name')
-            ->maxLength('student_name', 60)
-            ->requirePresence('student_name', 'create')
-            ->notEmptyString('student_name');
+     {
+    //     $validator
+    //         ->scalar('student_name')
+    //         ->maxLength('student_name', 60)
+    //         ->requirePresence('student_name', 'create')
+    //         ->notEmptyString('student_name');
 
 
 
-        $validator
-            ->scalar('student_number')
-            ->maxLength('student_number', 20)
-            ->requirePresence('student_number', 'create')
-            ->notEmptyString('student_number');
+    //     $validator
+    //         ->scalar('student_number')
+    //         ->maxLength('student_number', 20)
+    //         ->requirePresence('student_number', 'create')
+    //         ->notEmptyString('student_number');
 
 
 
-        $validator
-            ->integer('storageunit_id')
-            ->requirePresence('storageunit_id', 'create')
-            ->notEmptyString('storageunit_id');
+    //     $validator
+    //         ->integer('storageunit_id')
+    //         ->requirePresence('storageunit_id', 'create')
+    //         ->notEmptyString('storageunit_id');
 
             
-        $validator
-            ->integer('user_id')
-            ->requirePresence('user_id', 'create')
-            ->notEmptyString('user_id');
+    //     $validator
+    //         ->integer('user_id')
+    //         ->requirePresence('user_id', 'create')
+    //         ->notEmptyString('user_id');
 
-        $validator
-            ->integer('storagelocation_id')
-            ->requirePresence('storagelocation_id', 'create')
-            ->notEmptyString('storagelocation_id');
+    //     $validator
+    //         ->integer('storagelocation_id')
+    //         ->requirePresence('storagelocation_id', 'create')
+    //         ->notEmptyString('storagelocation_id');
             
-        $validator
-            ->scalar('description')
-            ->maxLength('description', 1000)
-            ->requirePresence('description', 'create')
-            ->notEmptyString('description');
+    //     $validator
+    //         ->scalar('description')
+    //         ->maxLength('description', 1000)
+    //         ->requirePresence('description', 'create')
+    //         ->notEmptyString('description');
 
-        $validator
-            ->integer('number_of_items')
-            ->requirePresence('number_of_items', 'create')
-            ->notEmptyString('number_of_items');
+    //     $validator
+    //         ->integer('number_of_items')
+    //         ->requirePresence('number_of_items', 'create')
+    //         ->notEmptyString('number_of_items');
 
         // $validator
         //     ->time('timeslot')
         //     ->requirePresence('timeslot', 'create')
         //     ->notEmptyString('timeslot');
 
-        $validator
-            ->date('departure_date')
-            ->requirePresence('departure_date', 'create')
-            ->notEmptyDate('departure_date');
+        // $validator
+        //     ->date('departure_date')
+        //     ->requirePresence('departure_date', 'create')
+        //     ->notEmptyDate('departure_date');
 
-        $validator
-            ->date('arrival_date')
-            ->requirePresence('arrival_date', 'create')
-            ->notEmptyDate('arrival_date');
+        // $validator
+        //     ->date('arrival_date')
+        //     ->requirePresence('arrival_date', 'create')
+        //     ->notEmptyDate('arrival_date');
 
         // $validator
         //     ->date('period')
         //     ->requirePresence('period', 'create')
         //     ->notEmptyDate('period');
 
-        $validator
-            ->dateTime('updated_at')
-            ->notEmptyDateTime('updated_at');
+        // $validator
+        //     ->dateTime('updated_at')
+        //     ->notEmptyDateTime('updated_at');
 
         return $validator;
     }

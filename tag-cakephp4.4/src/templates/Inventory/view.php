@@ -47,8 +47,8 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= h($inventory->description) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($inventory->id) ?></td>
+                    <!-- <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($inventory->id) ?></td> -->
                 </tr>
                 <tr>
                     <th><?= __('Number Of Items') ?></th>
