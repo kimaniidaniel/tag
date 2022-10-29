@@ -69,24 +69,6 @@ class InventoryTable extends Table
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
-        // $validator
-        //     ->scalar('first_name')
-        //     ->maxLength('first_name', 50)
-        //     ->requirePresence('first_name', 'create')
-        //     ->notEmptyString('first_name');
-
-        // $validator
-        //     ->scalar('last_name')
-        //     ->maxLength('last_name', 50)
-        //     ->requirePresence('last_name', 'create')
-        //     ->notEmptyString('last_name');
-
-
-        // $validator
-        //     ->integer('student_id')
-        //     ->maxLength('student_id', 20)
-        //     ->requirePresence('student_id', 'create')
-        //     ->notEmptyString('student_id');
 
 
         // $validator
@@ -97,10 +79,10 @@ class InventoryTable extends Table
 
 
 
-        // $validator
-        //     ->integer('storageunit_id')
-        //     ->requirePresence('storageunit_id', 'create')
-        //     ->notEmptyString('storageunit_id');
+        $validator
+            ->integer('storageunit_id')
+            ->requirePresence('storageunit_id', 'create')
+            ->notEmptyString('storageunit_id');
 
             
         $validator
@@ -108,10 +90,10 @@ class InventoryTable extends Table
             ->requirePresence('user_id', 'create')
             ->notEmptyString('user_id');
 
-        // $validator
-        //     ->integer('storagelocation_id')
-        //     ->requirePresence('storagelocation_id', 'create')
-        //     ->notEmptyString('storagelocation_id');
+        $validator
+            ->integer('storagelocation_id')
+            ->requirePresence('storagelocation_id', 'create')
+            ->notEmptyString('storagelocation_id');
             
         $validator
             ->scalar('description')
@@ -124,10 +106,10 @@ class InventoryTable extends Table
             ->requirePresence('number_of_items', 'create')
             ->notEmptyString('number_of_items');
 
-        $validator
-            ->time('timeslot')
-            ->requirePresence('timeslot', 'create')
-            ->notEmptyString('timeslot');
+        // $validator
+        //     ->time('timeslot')
+        //     ->requirePresence('timeslot', 'create')
+        //     ->notEmptyString('timeslot');
 
         $validator
             ->date('departure_date')
