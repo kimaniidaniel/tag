@@ -23,7 +23,7 @@ use Cake\I18n\FrozenTime;
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('name') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('name') ?></th> -->
                     <th><?= $this->Paginator->sort('first_name') ?></th>
                     <th><?= $this->Paginator->sort('last_name') ?></th>
                     <th><?= $this->Paginator->sort('student_id') ?></th>
@@ -41,7 +41,7 @@ use Cake\I18n\FrozenTime;
                 <?php foreach ($inventory as $inventory): ?>
                 <?php $timeslot = new FrozenTime($inventory->timeslot); ?>
                 <tr>
-                    <td><?= h($inventory->name) ?></td>
+                    <!-- <td><?= h($inventory->name) ?></td> -->
                     <td><?= h($inventory->fist_name) ?></td>
                     <td><?= h($inventory->last_name) ?></td>
                     <td><?= h($inventory->student_id) ?></td>
