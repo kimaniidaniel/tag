@@ -79,10 +79,10 @@ class InventoryTable extends Table
 
 
 
-    //     $validator
-    //         ->integer('storageunit_id')
-    //         ->requirePresence('storageunit_id', 'create')
-    //         ->notEmptyString('storageunit_id');
+        // $validator
+        //     ->integer('storageunit_id')
+        //     ->requirePresence('storageunit_id', 'create')
+        //     ->notEmptyString('storageunit_id');
 
             
         // $validator
@@ -142,8 +142,8 @@ class InventoryTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->existsIn('storageunit_id', 'Storageunits'), ['errorField' => 'storageunit_id']);
-        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
+        // $rules->add($rules->existsIn('storageunit_id', 'Storageunits'), ['errorField' => 'storageunit_id']);
+        // $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'user_id']);
 
         return $rules;
     }
