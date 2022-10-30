@@ -6,6 +6,17 @@
  * @var string[]|\Cake\Collection\CollectionInterface $users
  */
 ?>
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisInventoryItem = $this->Url->build([
+    'controller' => 'Inventory',
+    'action' => 'edit',
+    $inventory->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
+// echo $qrCodeUrl;
+?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -20,6 +31,7 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="inventory form content">
+        <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
             <?= $this->Form->create($inventory) ?>
             <fieldset>
                 <legend><?= __('Edit Inventory') ?></legend>
