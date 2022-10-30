@@ -46,12 +46,12 @@ class InventoryTable extends Table
 
         $this->belongsTo('Storageunits', [
             'foreignKey' => 'storageunit_id',
-            'joinType' => 'INNER',
+            'joinType' => 'LEFT',
         ]);
         
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
-            'joinType' => 'INNER',
+            'joinType' => 'LEFT',
         ]);
     }
 
