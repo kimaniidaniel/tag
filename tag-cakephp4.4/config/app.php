@@ -245,6 +245,14 @@ return [
             'tls' => false,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+    //     'gmail' => [
+    //         'host' => 'smtp.gmail.com',
+    //         'port' => 587,
+    //         'username' => 'omclawrence@gmail.com',
+    //         'password' => 'Grenada0209!',
+    //         'className' => 'Smtp',
+    //         'tls' => true
+    // ]
     ],
 
     /*
@@ -257,9 +265,9 @@ return [
      * for more information.
      */
     'Email' => [
-        'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+        'gmail' => [
+            'transport' => 'gmail',
+            'from' => 'omclawrence@gmail.com',
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */

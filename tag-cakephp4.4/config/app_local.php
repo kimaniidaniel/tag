@@ -82,13 +82,24 @@ return [
      * See app.php for more configuration options.
      */
     'EmailTransport' => [
+        // Sample Mail configuration
         'default' => [
+            'className' => 'Mail',
             'host' => 'smtp.gmail.com',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
-            'client' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+            'port' => 587,
+            'username' => 'omclawrence@gmail.com',
+            'password' => 'Grenada0209!',
+            'tls' => true
         ],
+        // Sample SMTP configuration
+        'gmail' => [
+            'host' => 'smtp.gmail.com',
+            'port' => 587,
+            'username' => 'omclawrence@gmail.com',
+            'password' => 'qosgdirngllbavuv',
+            'className' => 'Smtp',
+            'tls' => true
+        ]
+    
     ],
 ];

@@ -85,7 +85,7 @@ class InventoryController extends AppController
             if ($this->Inventory->save($inventory)) {
                 $this->Flash->success(__('The inventory has been saved.'));
    
-                $Mailer = new Mailer('default');
+                $Mailer = new Mailer('gmail');
                 $Mailer->setFrom(['omclawrence@gmail.com' => 'TagandStore1.0'])
                     //    ->emailFormat('html')
                     ->setTo('omclawrence@gmail.com')
