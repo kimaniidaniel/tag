@@ -83,7 +83,7 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'host' => 'localhost',
+            'host' => 'smtp.gmail.com',
             'port' => 25,
             'username' => null,
             'password' => null,

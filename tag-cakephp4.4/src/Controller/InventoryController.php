@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace App\Controller;
+use cake\Mailer\Mailer;
 
 /**
  * Inventory Controller
@@ -83,11 +84,18 @@ class InventoryController extends AppController
             $inventory = $this->Inventory->patchEntity($inventory, $this->request->getData());
             if ($this->Inventory->save($inventory)) {
                 $this->Flash->success(__('The inventory has been saved.'));
+   
+                $Mailer = new Mailer('default');
+                $Mailer->setFrom(['omclawrence@gmail.com' => 'TagandStore1.0'])
+                    //    ->emailFormat('html')
+                    ->setTo('omclawrence@gmail.com')
+                    ->setSubject('Confirmation')
+                    ->deliver('My message');
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
-            debug($inventory);
+            //debug($inventory);
         }
 
         $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
