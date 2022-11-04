@@ -86,11 +86,13 @@ class InventoryController extends AppController
                 $this->Flash->success(__('The inventory has been saved.'));
    
                 $Mailer = new Mailer('gmail');
-                $Mailer->setFrom(['omclawrence@gmail.com' => 'TagandStore1.0'])
+                $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
                     //    ->emailFormat('html')
-                    ->setTo('omclawrence@gmail.com')
+                    ->setTo('ozmaclaw1@gmail.com')
                     ->setSubject('Confirmation')
-                    ->deliver('My message');
+                    ->setEmailFormat('html')
+                    ->deliver('This email confirms that you have sucessfully submitted an inventory
+                    form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/122 to continue ');
 
                 return $this->redirect(['action' => 'index']);
             }

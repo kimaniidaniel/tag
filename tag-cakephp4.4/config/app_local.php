@@ -87,16 +87,16 @@ return [
             'className' => 'Mail',
             'host' => 'smtp.gmail.com',
             'port' => 587,
-            'username' => 'omclawrence@gmail.com',
-            'password' => 'Grenada0209!',
+            'username' => 'ozmaclaw1@gmail.com',
+            'password' => 'ffzaxtusazoxpkqj',
             'tls' => true
         ],
         // Sample SMTP configuration
         'gmail' => [
             'host' => 'smtp.gmail.com',
             'port' => 587,
-            'username' => 'omclawrence@gmail.com',
-            'password' => 'qosgdirngllbavuv',
+            'username' => 'ozmaclaw1@gmail.com',
+            'password' => 'ffzaxtusazoxpkqj',
             'className' => 'Smtp',
             'tls' => true
         ]
