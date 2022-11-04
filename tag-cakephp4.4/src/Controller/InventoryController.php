@@ -92,7 +92,7 @@ class InventoryController extends AppController
                     ->setSubject('Confirmation')
                     ->setEmailFormat('html')
                     ->deliver('This email confirms that you have sucessfully submitted an inventory
-                    form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/').$inventory->id;
+                    form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
                         //debug($inventory);
                 return $this->redirect(['action' => 'index']);
             }
