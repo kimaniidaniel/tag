@@ -170,7 +170,7 @@ class InventoryController extends AppController
                 'value' => $value->id, 'text' => $value->first_name . ' ' . $value->last_name
             ];
         });
-        $this->set(compact('storageunits', 'users','storageLocations'));
+        $this->set(compact('storageunits', 'users','storagelocations'));
     }
 
     /**
