@@ -94,6 +94,7 @@ class InventoryController extends AppController
                     ->deliver('This email confirms that you have sucessfully submitted an inventory
                     form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
                         //debug($inventory);
+                        
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
@@ -131,18 +132,45 @@ class InventoryController extends AppController
         $inventory = $this->Inventory->get($id, [
             'contain' => [],
         ]);
+       
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $inventory = $this->Inventory->patchEntity($inventory, $this->request->getData());
+
+            $storageunitdata = $this->Inventory->Storageunits->get($inventory->storageunit_id, [
+                'contain' => [],
+            ]);
+
+            $userData = $this->Inventory->Users->get($inventory->user_id, [
+                'contain' => [],
+            ]);
+
             if ($this->Inventory->save($inventory)) {
                 $this->Flash->success(__('The inventory has been saved.'));
+                $Mailer = new Mailer('gmail');
+                $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
+                    //    ->emailFormat('html')
+                    // ->setTo('ozmaclaw1@gmail.com')
+                    ->setTo($userData->email)
+                    ->setSubject('Confirmation')
+                    ->setEmailFormat('html')
+                    ->deliver(nl2br('This email confirms that your items has been stored. 
+                    Storage details:
+                    Cage ID: '.$storageunitdata->name.'
+                    Description: '.$inventory->description 
+                    ));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
         }
-        $storageunits = $this->Inventory->Storageunits->find('list', ['limit' => 200])->all();
-        $users = $this->Inventory->Users->find('list', ['limit' => 200])->all();
-        $this->set(compact('inventory', 'storageunits', 'users'));
+        $inventory = $this ->Inventory->find('list', ['limit' => 200])->all();
+        $users = $this->Inventory->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
+            return [
+                'value' => $value->id, 'text' => $value->first_name . ' ' . $value->last_name
+            ];
+        });
+        $this->set(compact('storageunits', 'users','storageLocations'));
     }
 
     /**

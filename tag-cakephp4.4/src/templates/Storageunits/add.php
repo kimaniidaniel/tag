@@ -19,8 +19,8 @@
             <fieldset>
                 <legend><?= __('Add Storage Unit') ?></legend>
                 <?php
-                    echo $this->Form->control('storage Location', ['options' => $storagelocations]);
-                    echo $this->Form->control('Cage name',['placeholder'=>'Cage number']);
+                    echo $this->Form->control('storagelocation_id', ['options' => $storagelocations]);
+                    echo $this->Form->control('cage_name',['placeholder'=>'Cage name']);
                     echo $this->Form->control('id_number', ['placeholder'=>'please enter you ID number']);
                     //  echo $this->Form->control('description');
                     echo $this->Form->control('user_id', ['options' => $users]);

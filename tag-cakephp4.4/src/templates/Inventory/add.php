@@ -19,8 +19,10 @@
         <div class="inventory form content">
             <?= $this->Form->create($inventory) ?>
             <fieldset>
+            <h4>Please enter a form for each item being stored</h4>
                 <legend><?= __('Add Inventory') ?></legend>
                 <?php
+                
                     echo $this->Form->control('student_name', ['placeholder'=>'First/Last Name']);
                     // echo $this->Form->control('first_name', ['placeholder'=>'First Name']);
                     // echo $this->Form->control('last_name', ['placeholder'=>'Last Name']);
@@ -30,7 +32,7 @@
                     echo $this->Form->control('description',['placeholder'=>'Please list your items']);
                     // echo $this->Form->control('storagelocation_id', ['options'=>$storageLocations]);                                                                                           
                     //echo $this->Form->control('period');
-                    echo $this->Form->control('number_of_items');
+                    // echo $this->Form->control('number_of_items');
                     //https://book.cakephp.org/4/en/views/helpers/form.html#creating-time-controls
                     echo $this->Form->control('timeslot', 
                         ['options'=>
@@ -42,9 +44,16 @@
                     // echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
-            <?= $this->Form->end() ?>
+            <!-- <?= $this->Form->button(__('Submit')) ?> -->
+            <?= $this->Html->link(__('Add new'), ['action' => 'add'], ['class' => 'button float-left']) ?>
+            <div class>
+                <div style="text-align: right;"/>
+                <?= $this->Form->button(__('Submit')) ?>
             
+            </div>
+            </div>
+            <?= $this->Form->end() ?>
+    
         </div>
     </div>
 </div>

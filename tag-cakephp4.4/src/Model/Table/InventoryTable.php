@@ -40,7 +40,7 @@ class InventoryTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('inventory');
+        $this->setTable('Inventory');
         // $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 

@@ -27,7 +27,7 @@ use Cake\I18n\FrozenTime;
                     <!-- <th><?= $this->Paginator->sort('first_name') ?></th>
                     <th><?= $this->Paginator->sort('last_name') ?></th> -->
                     <th><?= $this->Paginator->sort('student_number') ?></th>
-                    <th><?= $this->Paginator->sort('storageunit_id') ?></th>
+                    <th><?= $this->Paginator->sort('storage_unit_id') ?></th>
                     <!-- <th><?= $this->Paginator->sort('user') ?></th> -->
                     <!-- <th><?= $this->Paginator->sort('description') ?></th> -->
                     <th><?= $this->Paginator->sort('number_of_items') ?></th>
@@ -46,7 +46,7 @@ use Cake\I18n\FrozenTime;
                     <!-- <td><?= h($inventory->first_name) ?></td>
                     <td><?= h($inventory->last_name) ?></td> -->
                     <td><?= h($inventory->student_number) ?></td>
-                    <td><?= $inventory->has('storageunit_id') && !empty($inventory->storageunit)? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
+                    <td><?= $inventory->has('storageunit_id') && !empty($inventory->storageunit)? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
                     <!-- <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td> -->
                     <!-- <td><?= h($inventory->description) ?></td> -->
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>

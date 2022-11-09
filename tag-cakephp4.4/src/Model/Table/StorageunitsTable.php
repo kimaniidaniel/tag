@@ -41,8 +41,8 @@ class StorageunitsTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('storageunits');
-        $this->setDisplayField('name');
+        $this->setTable('Storageunits');
+        $this->setDisplayField('cage_name');
         $this->setPrimaryKey('id');
 
         $this->belongsTo('Storagelocations', [
@@ -73,10 +73,10 @@ class StorageunitsTable extends Table
             // ->add('storagelocation_id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
-            ->scalar('name')
-            ->maxLength('name', 50)
-            ->requirePresence('name', 'create')
-            ->notEmptyString('name');
+            ->scalar('cage_name')
+            ->maxLength('cage_name', 50)
+            ->requirePresence('cage_name', 'create')
+            ->notEmptyString('cage_name');
 
         // $validator
         //     ->scalar('identifier')

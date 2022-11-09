@@ -31,13 +31,12 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
     </aside>
     <div class="column-responsive column-80">
         <div class="inventory form content">
-        <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div>
+        <!-- <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div> -->
             <?= $this->Form->create($inventory) ?>
             <fieldset>
                 <legend><?= __('Edit Inventory') ?></legend>
                 <?php
                     echo $this->Form->control('student_name');
-                    echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
                     echo $this->Form->control('user_id', ['options' => $users]);
                     echo $this->Form->control('description');
                     echo $this->Form->control('number_of_items');

@@ -40,7 +40,7 @@ class StoragelocationsTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('storagelocations');
+        $this->setTable('Storagelocations');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 

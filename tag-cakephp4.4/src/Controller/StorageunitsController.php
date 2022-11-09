@@ -50,7 +50,7 @@ class StorageunitsController extends AppController
         }
         // for Search ------- End -------
 
-        // debug($storageunits);
+        debug($storageunits);
         $this->set(compact('storageunits'));
     }
 
