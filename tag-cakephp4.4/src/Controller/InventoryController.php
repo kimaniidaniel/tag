@@ -171,7 +171,7 @@ class InventoryController extends AppController
             ];
             
         });
-        $this->set(compact('storageunits', 'users','storagelocations'));
+        $this->set(compact('storageunits', 'users','storagelocations', 'inventory'));
     }
 
     /**
