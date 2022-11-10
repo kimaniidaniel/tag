@@ -40,8 +40,8 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('User') ?></th>
-                    <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
+                <th><?= __('User') ?></th>
+                <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->first_name . " " . $inventory->user->last_name, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Description') ?></th>

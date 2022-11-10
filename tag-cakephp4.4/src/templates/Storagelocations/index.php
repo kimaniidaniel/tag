@@ -34,7 +34,7 @@
                 <?php foreach ($storagelocations as $storagelocation): ?>
                 <tr>
                     <!-- <td><?= $this->Number->format($storagelocation->id) ?></td> -->
-                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->id, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
+                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->
                     <!-- <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td> -->
                     <td><?= h($storagelocation->name) ?></td>

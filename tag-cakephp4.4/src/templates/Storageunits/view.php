@@ -44,8 +44,8 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= h($storageunit->id_number) ?></td> -->
                 </tr>
                 <tr>
-                    <th><?= __('User') ?></th>
-                    <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->id, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
+                <th><?= __('User') ?></th>
+                <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>

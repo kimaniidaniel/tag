@@ -46,10 +46,10 @@
                     <th><?= __('Address') ?></th>
                     <td><?= h($user->address) ?></td>
                 </tr> -->
-                <tr>
+                <!-- <tr>
                     <th><?= __('User') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
-                </tr>
+                </tr> -->
             </table>
             <div class="related">
                 <h4><?= __('Related Inventory') ?></h4>
@@ -62,7 +62,7 @@
                             <!-- <th><?= __('Storageunit Id') ?></th> -->
                             <!-- <th><?= __('User') ?></th> -->
                             <th><?= __('Description') ?></th>
-                            <th><?= __('Number Of Items') ?></th>
+                            <!-- <th><?= __('Number Of Items') ?></th> -->
                             <th><?= __('Departure Date') ?></th>
                             <th><?= __('Arival Date') ?></th>
                             <th><?= __('Updated At') ?></th>
@@ -75,7 +75,7 @@
                             <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
                             <!-- <td><?= h($inventory->user_id) ?></td> -->
                             <td><?= h($inventory->description) ?></td>
-                            <td><?= h($inventory->number_of_items) ?></td>
+                            <!-- <td><?= h($inventory->number_of_items) ?></td> -->
                             <td><?= h($inventory->departure_date) ?></td>
                             <td><?= h($inventory->arrival_date) ?></td>
                             <td><?= h($inventory->updated_at) ?></td>

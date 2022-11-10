@@ -44,12 +44,10 @@
                     // echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
-            <!-- <?= $this->Form->button(__('Submit')) ?> -->
             <?= $this->Html->link(__('Add new'), ['action' => 'add'], ['class' => 'button float-left']) ?>
             <div class>
                 <div style="text-align: right;"/>
                 <?= $this->Form->button(__('Submit')) ?>
-            
             </div>
             </div>
             <?= $this->Form->end() ?>
