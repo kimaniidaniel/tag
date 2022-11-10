@@ -94,7 +94,10 @@ class InventoryController extends AppController
                     ->deliver('This email confirms that you have sucessfully submitted an inventory
                     form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
                         //debug($inventory);
-                        
+                
+                //https://book.cakephp.org/4/en/controllers/request-response.html#request-body-data
+                $addnewbutton = $this->request->getData('addnew');;
+                if(isset($addnewbutton)) return $this->redirect(['action' => 'add']);        
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
