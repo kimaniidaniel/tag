@@ -51,10 +51,10 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <!-- <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($inventory->id) ?></td> -->
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><?= __('Number Of Items') ?></th>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
-                </tr>
+                </tr> -->
                 <tr>
                 <th><?= __('Timeslot') ?></th>
                     <td><?= $this->Number->format($inventory->timeslot) ?></td>
