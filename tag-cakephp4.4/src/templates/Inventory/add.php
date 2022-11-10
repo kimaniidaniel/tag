@@ -44,12 +44,13 @@
                     // echo $this->Form->control('updated_at');        
                 ?>
             </fieldset>
-            <?= $this->Html->link(__('Add new'), ['action' => 'add'], ['class' => 'button float-left']) ?>
-            <div class>
-                <div style="text-align: right;"/>
-                <?= $this->Form->button(__('Submit')) ?>
+            <!--<?= $this->Html->link(__('Add new'), ['action' => 'add'], ['class' => 'button float-left']) ?>-->
+            <!--https://book.cakephp.org/4/en/views/helpers/form.html#creating-buttons-and-submit-elements-->
+            <div style="text-align: center;"/>
+                <?= $this->Form->button(__('Submit'), ['type'=>'submit', 'name'=>'submit']) ?>
+                <?= $this->Form->button(__('Add New'), ['type'=>'submit', 'name'=>'addnew']) ?>
             </div>
-            </div>
+
             <?= $this->Form->end() ?>
     
         </div>
