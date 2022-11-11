@@ -34,7 +34,7 @@ use Cake\I18n\FrozenTime;
                     <th><?= $this->Paginator->sort('timeslot') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
                     <th><?= $this->Paginator->sort('arrival_date') ?></th>
-                    <th><?= $this->Paginator->sort('updated_at') ?></th>
+                    <!-- <th><?= $this->Paginator->sort('updated_at') ?></th> -->
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -53,10 +53,10 @@ use Cake\I18n\FrozenTime;
                     <td><?= h($timeslot) ?></td>
                     <td><?= h($inventory->departure_date) ?></td>
                     <td><?= h($inventory->arrival_date) ?></td>
-                    <td><?= h($inventory->updated_at) ?></td>
+                    <!-- <td><?= h($inventory->updated_at) ?></td> -->
                     <td class="actions">
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $inventory->id], ['escape' => false]) ?>
-                        <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $inventory->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $inventory->id)]) ?>
+                        <!-- <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $inventory->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $inventory->id)]) ?> -->
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $inventory->id], ['escape' => false]) ?>
                         
                         <!-- <?= $this->Html->link(__('View'), ['action' => 'view', $inventory->id]) ?>

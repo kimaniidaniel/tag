@@ -46,10 +46,10 @@
                     <th><?= __('Address') ?></th>
                     <td><?= h($user->address) ?></td>
                 </tr> -->
-                <!-- <tr>
+                <tr>
                     <th><?= __('User') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
-                </tr> -->
+                </tr>
             </table>
             <div class="related">
                 <h4><?= __('Related Inventory') ?></h4>

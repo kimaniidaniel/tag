@@ -21,7 +21,7 @@
             <table>
                 <tr>
                     <th><?= __('User') ?></th>
-                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->id, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
+                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'user', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Name') ?></th>

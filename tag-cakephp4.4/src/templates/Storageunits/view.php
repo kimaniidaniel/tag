@@ -80,7 +80,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                           <!-- <td><?= h($inventory->updated_at) ?></td> -->
                             <td class="actions">
                             <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storageunit->id], ['escape' => false]) ?>
-                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunit->id], ['escape' => false]) ?>
+                            <!-- <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunit->id], ['escape' => false]) ?> -->
                             <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storageunit->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storageunit->id)]) ?>
                             </td>
                         </tr>
