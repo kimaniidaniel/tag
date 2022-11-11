@@ -37,9 +37,10 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 <legend><?= __('Edit Inventory') ?></legend>
                 <?php
                     echo $this->Form->control('student_name');
-                    echo $this->Form->control('user_id', ['options' => $users]);
+                    echo $this->Form->control('user_id');
                     echo $this->Form->control('description');
-                    echo $this->Form->control('number_of_items');
+                    // echo $this->Form->control('number_of_items');
+                    echo $this->Form->control('cage_name'); 
                     echo $this->Form->control('timeslot');
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arrival_date');

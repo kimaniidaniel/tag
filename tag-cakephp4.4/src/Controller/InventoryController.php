@@ -133,20 +133,24 @@ class InventoryController extends AppController
     public function edit($id = null)
     {
         $inventory = $this->Inventory->get($id, [
-            'contain' => [],
+            'contain' => ['Storageunits','Users']
+            
         ]);
-       
+
+        $this->set(compact('inventory'));
+    
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $inventory = $this->Inventory->patchEntity($inventory, $this->request->getData());
 
             $storageunitdata = $this->Inventory->Storageunits->get($inventory->storageunit_id, [
-                'contain' => [],
+                'contain' => ['Inventory']
             ]);
-
+            $this->set(compact('Inventory'));
             $userData = $this->Inventory->Users->get($inventory->user_id, [
-                'contain' => [],
+                'contain' => ['Inventory'],
             ]);
+            $this->set(compact('Inventory'));
 
             if ($this->Inventory->save($inventory)) {
                 $this->Flash->success(__('The inventory has been saved.'));
@@ -174,7 +178,7 @@ class InventoryController extends AppController
             ];
             
         });
-        $this->set(compact('storageunits', 'users','storagelocations', 'inventory'));
+        $this->set(compact('users'));
     }
 
     /**
