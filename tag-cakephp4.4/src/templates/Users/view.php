@@ -141,7 +141,7 @@
                         <tr>
                             <!-- <td><?= h($storageunits->id) ?></td> -->
                             <!-- <td><?= h($storageunits->storagelocation_id) ?></td> -->
-                            <td><?= h($storageunits->cage_name) ?></td>
+                            <td><?= h($storageunits->storageunit_id) ?></td>
                             <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
