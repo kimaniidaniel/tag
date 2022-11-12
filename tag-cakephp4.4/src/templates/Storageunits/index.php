@@ -36,7 +36,7 @@
                 <tr>
                     <!-- <td><?= $this->Number->format($storageunit->id) ?></td> -->
                     <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : $storageunit->storagelocation_id ?></td>
-                    <td><?= h($storageunit->cage_name) ?></td>
+                    <td><?= h($storageunit->storageunit_id) ?></td>
                     <!-- <td><?= h($storageunit->id_number) ?></td> -->
                     <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                     <td><?= h($storageunit->updated_at) ?></td>

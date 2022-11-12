@@ -36,8 +36,8 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     <td><?= h($inventory->student_name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Storageunit') ?></th>
-                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
+                    <th><?= __('Storage Unit') ?></th>
+                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->storageunit_id, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
                 </tr>
                 <tr>
                 <th><?= __('User') ?></th>

@@ -144,26 +144,26 @@ class InventoryController extends AppController
             $inventory = $this->Inventory->patchEntity($inventory, $this->request->getData());
 
             $storageunitdata = $this->Inventory->Storageunits->get($inventory->storageunit_id, [
-                'contain' => ['Inventory']
+                'contain' => [],
             ]);
-            $this->set(compact('Inventory'));
+        //   $this->set(compact());  
             $userData = $this->Inventory->Users->get($inventory->user_id, [
-                'contain' => ['Inventory'],
+                'contain' => [],
             ]);
-            $this->set(compact('Inventory'));
+            $this->set(compact('inventory'));
 
             if ($this->Inventory->save($inventory)) {
                 $this->Flash->success(__('The inventory has been saved.'));
                 $Mailer = new Mailer('gmail');
                 $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
                     //    ->emailFormat('html')
-                    // ->setTo('ozmaclaw1@gmail.com')
-                    ->setTo($userData->email)
+                    ->setTo('ozmaclaw1@gmail.com')
+                    // ->setTo($userData->email)
                     ->setSubject('Confirmation')
                     ->setEmailFormat('html')
                     ->deliver(nl2br('This email confirms that your items has been stored. 
                     Storage details:
-                    Cage ID: '.$storageunitdata->name.'
+                    Cage ID: '.$storageunitdata->storageunit_id.'
                     Description: '.$inventory->description 
                     ));
 
@@ -173,9 +173,9 @@ class InventoryController extends AppController
         }
         $inventory = $this ->Inventory->find('list', ['limit' => 200])->all();
         
-        $storageUnits = $this->fetchTable('StorageUnits')->find()->map(function($value, $key){
+        $storageUnits = $this->fetchTable('Storageunits')->find()->map(function($value, $key){
             return [
-                'value' => $value->id, 'text' => $value->name 
+                'value' => $value->id, 'text' => $value->storageunit_id
             ];   
         });
         

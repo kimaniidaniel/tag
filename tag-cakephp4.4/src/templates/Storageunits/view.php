@@ -37,7 +37,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 </tr>
                 <tr>
                     <th><?= __(' Storage Unit') ?></th>
-                    <td><?= h($storageunit->cage_name) ?></td>
+                    <td><?= h($storageunit->storageunit_id) ?></td>
                 </tr>
                 <tr>
                     <!-- <th><?= __('id_number') ?></th>
