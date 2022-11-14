@@ -29,7 +29,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
         <div class="storageunits view content">
             <h3 style="text-align: center;"><?= h($storageunit->name) ?></h3>
             <div style="text-align: center;"><img src="<?=$qrCodeUrl?>"></div>
-            <button>Download QR code</button>
+            <!-- <button>Download QR code</button> -->
             <table>
                 <tr>
                     <th><?= __('Storagelocation') ?></th>
@@ -37,7 +37,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 </tr>
                 <tr>
                     <th><?= __(' Storage Unit') ?></th>
-                    <td><?= h($storageunit->storageunit_id) ?></td>
+                    <td><?= h($storageunit->cage_name) ?></td>
                 </tr>
                 <tr>
                     <!-- <th><?= __('id_number') ?></th>

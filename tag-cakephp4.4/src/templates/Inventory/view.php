@@ -29,7 +29,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
         <div class="inventory view content">
             <h3 style="text-align: center;"><?= h($inventory->name) ?></h3>
             <div style="text-align: center;"><img src="<?=$qrCodeUrl?>"></div>
-             <button>Download QR code</button>
+             <!-- <button>Download QR code</button> -->
             <table>
                 <tr>
                     <th><?= __(' Name') ?></th>
@@ -37,7 +37,7 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                 </tr>
                 <tr>
                     <th><?= __('Storage Unit') ?></th>
-                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->storageunit_id, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
+                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->cage_name]) : '' ?></td>
                 </tr>
                 <tr>
                 <th><?= __('User') ?></th>

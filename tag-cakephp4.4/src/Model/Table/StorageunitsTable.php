@@ -54,7 +54,7 @@ class StorageunitsTable extends Table
             'joinType' => 'INNER',
         ]);
         $this->hasMany('Inventory', [
-            'foreignKey' => 'storageunit_id',
+            'foreignKey' => 'cage_name',
         ]);
     }
 

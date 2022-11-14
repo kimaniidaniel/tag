@@ -175,7 +175,7 @@ class InventoryController extends AppController
         
         $storageUnits = $this->fetchTable('Storageunits')->find()->map(function($value, $key){
             return [
-                'value' => $value->id, 'text' => $value->storageunit_id
+                'value' => $value->id, 'text' => $value->cage_name
             ];   
         });
         

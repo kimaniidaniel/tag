@@ -45,7 +45,7 @@ class InventoryTable extends Table
         $this->setPrimaryKey('id');
 
         $this->belongsTo('Storageunits', [
-            'foreignKey' => 'storageunit_id',
+            'foreignKey' => 'cage_name',
             'joinType' => 'LEFT',
         ]);
         
