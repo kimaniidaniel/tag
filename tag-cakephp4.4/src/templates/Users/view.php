@@ -48,7 +48,7 @@
                 </tr> -->
                 <tr>
                     <th><?= __('User') ?></th>
-                    <td><?= $this->Number->format($user->id) ?></td>
+                    <td><?= h($user->id) ?></td>
                 </tr>
             </table>
             <div class="related">

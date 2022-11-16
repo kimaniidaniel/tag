@@ -49,6 +49,7 @@
                     <td><?= h($user->email) ?></td>
                     <!-- <td><?= h($user->address) ?></td> -->
                     <td class="actions">
+                    <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $user->id], ['escape' => false]) ?>
                         <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $user->id], ['escape' => false]) ?>
                         <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $user->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
                     </td>

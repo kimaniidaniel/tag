@@ -163,7 +163,7 @@ class InventoryController extends AppController
                     ->setEmailFormat('html')
                     ->deliver(nl2br('This email confirms that your items has been stored. 
                     Storage details:
-                    Cage ID: '.$storageunitdata->storageunit_id.'
+                    Cage ID: '.$storageunitdata->cage_name.'
                     Description: '.$inventory->description 
                     ));
 
