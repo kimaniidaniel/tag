@@ -11,7 +11,7 @@
     <div class="table-responsive">
         <?php echo $this->Form->create(); ?>
         <?php echo $this->Form->control('query', 
-            ['placeholder'=>'Search: Name, address, username etc.', 'class'=>'search-text',
+            ['placeholder'=>'Search: Name, id number,etc.', 'class'=>'search-text',
                 'label'=>'',
                 'style'=>'border-radius:5px;width:100%']
             ); 

@@ -28,8 +28,8 @@ class UsersController extends AppController
                 $conditions = ['OR' => [
                     'Users.first_name like' => '%' . $q . '%',
                     'Users.last_name like' => '%' . $q . '%',
-                    'Users.identifier like' => '%' . $q . '%',
-                    'Users.address like' => '%' . $q . '%',
+                    // 'Users.identifier like' => '%' . $q . '%',
+                    // 'Users.address like' => '%' . $q . '%',
                     'Users.role like' => '%' . $q . '%',
                     'Users.email like' => '%' . $q . '%'
                 ]];

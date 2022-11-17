@@ -46,16 +46,13 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                     echo $this->Form->control('departure_date');
                     echo $this->Form->control('arrival_date');
                     echo $this->Form->control('updated_at');
-                    echo $this->Form->radio(
-                        'checked in',
-                        [
-                            ['value' => 'checked In', 'text' => 'Checked In', 'label' => ['class' => 'checked in']],
-                        ]
-                    );
-
+                
                 ?>
             </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
+            <!-- <div style="text-align: center;"/> -->
+                <!-- <?= $this->Form->button(__('checked in'), ['type'=>'check in', 'name'=>'check in']) ?> -->
+                <?= $this->Form->button(__('Submit'), ['type'=>'submit', 'name'=>'submit']) ?>
+            
             <?= $this->Form->end() ?>
         </div>
     </div>

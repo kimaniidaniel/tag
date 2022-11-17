@@ -31,18 +31,18 @@ class InventoryController extends AppController
             $q = $this->request->getData()['query']; // get search query sent in from form
             if(!empty($q)) {
                 $conditions = ['OR'=>[
-                    'Inventory.name like'=>'%'.$q.'%',
+                    // 'Inventory.name like'=>'%'.$q.'%',
                     'Inventory.description like'=>'%'.$q.'%',
-                    'Users.first_name like'=>'%'.$q.'%',
-                    'Users.last_name like'=>'%'.$q.'%',
-                    'Users.id_number like'=>'%'.$q.'%',
-                    'Users.address like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%',
-                    'Storageunits.name like'=>'%'.$q.'%',
-                    'Timeslot.name like'=>'%'.$q.'%',
-                    'Storagelocations.name like'=>'%'.$q.'%',
-                    'Storageunits.id_number like'=>'%'.$q.'%',
+                    'Inventory.student_name like'=>'%'.$q.'%',
+                    // 'Users.last_name like'=>'%'.$q.'%',
+                    // 'Users.id_number like'=>'%'.$q.'%',
+                    // 'Users.address like'=>'%'.$q.'%',
+                    // 'Users.email like'=>'%'.$q.'%',
+                    // 'Users.role like'=>'%'.$q.'%',
+                    'Storageunits.cage_name like'=>'%'.$q.'%',
+                    // 'Timeslot.like'=>'%'.$q.'%',
+                    // 'Storagelocations.name like'=>'%'.$q.'%',
+                    // 'Storageunits.id_number like'=>'%'.$q.'%',
                 ]];
 
                 $inventory = $this->paginate($this->Inventory->find('all',['conditions'=> $conditions ]));
@@ -79,12 +79,17 @@ class InventoryController extends AppController
      */
     public function add()
     {
+        //created a new entry form//
         $inventory = $this->Inventory->newEmptyEntity();
+        //post the form//
         if ($this->request->is('post')) {
+            //get the data the user enters from the form
             $inventory = $this->Inventory->patchEntity($inventory, $this->request->getData());
+            //save the data in the inventory table//
             if ($this->Inventory->save($inventory)) {
+                //flash the message after data has been stored//
                 $this->Flash->success(__('The inventory has been saved.'));
-   
+                // debug($inventory);die;
                 $Mailer = new Mailer('gmail');
                 $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
                     //    ->emailFormat('html')
@@ -97,8 +102,11 @@ class InventoryController extends AppController
                 
                 //https://book.cakephp.org/4/en/controllers/request-response.html#request-body-data
                 $addnewbutton = $this->request->getData('addnew');;
+                //determine if the argument variable exists and if it does then
+                //return to the index page
                 if(isset($addnewbutton)) return $this->redirect(['action' => 'add']);        
                 return $this->redirect(['action' => 'index']);
+                // debug($inventory);die;
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));
          
@@ -166,7 +174,8 @@ class InventoryController extends AppController
                     Cage ID: '.$storageunitdata->cage_name.'
                     Description: '.$inventory->description 
                     ));
-
+                    // $checkinbutton = $this->request->getData('checkin');;
+                    // if(isset($checkinbutton)) return $this->redirect(['action' => 'add']);
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The inventory could not be saved. Please, try again.'));

@@ -29,18 +29,18 @@ class StorageunitsController extends AppController
             $q = $this->request->getData()['query']; // get search query sent in from form
             if(!empty($q)) {
                 $conditions = ['OR'=>[
-                    'Users.first_name like'=>'%'.$q.'%',
-                    'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
-                    'Users.address like'=>'%'.$q.'%',
+                    // 'Users.first_name like'=>'%'.$q.'%',
+                    // 'Users.last_name like'=>'%'.$q.'%',
+                    // 'Users.identifier like'=>'%'.$q.'%',
+                    // 'Users.address like'=>'%'.$q.'%',
                    // 'Users.unit like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%',
-                    'Storagelocations.name like'=>'%'.$q.'%',
-                    'Storagelocations.address like'=>'%'.$q.'%',
-                    'Storagelocations.description like'=>'%'.$q.'%',
-                    'Storageunits.name like'=>'%'.$q.'%',
-                    'Storageunits.identifier like'=>'%'.$q.'%',
+                    // 'Users.email like'=>'%'.$q.'%',
+                    // 'Users.role like'=>'%'.$q.'%',
+                    // 'Storagelocations.storagelocation_id like'=>'%'.$q.'%',
+                    // 'Storagelocations.address like'=>'%'.$q.'%',
+                    // 'Storagelocations.description like'=>'%'.$q.'%',
+                    'Storageunits.cage_name like'=>'%'.$q.'%',
+                    // 'Storageunits.identifier like'=>'%'.$q.'%',
                 ]];
 
                 $storageunits = $this->paginate($this->Storageunits->find('all',['conditions'=> $conditions ]));

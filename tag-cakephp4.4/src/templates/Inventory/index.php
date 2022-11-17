@@ -12,7 +12,7 @@ use Cake\I18n\FrozenTime;
     <div class="table-responsive">
         <?php echo $this->Form->create(); ?>
         <?php echo $this->Form->control('query', 
-            ['placeholder'=>'Search: Name, unit, description etc.', 'class'=>'search-text',
+            ['placeholder'=>'Search: Student Name, unit, description etc.', 'class'=>'search-text',
                 'label'=>'',
                 'style'=>'border-radius:5px;width:100%']
             ); 
