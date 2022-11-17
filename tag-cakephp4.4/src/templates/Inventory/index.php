@@ -34,7 +34,7 @@ use Cake\I18n\FrozenTime;
                     <th><?= $this->Paginator->sort('timeslot') ?></th>
                     <th><?= $this->Paginator->sort('departure_date') ?></th>
                     <th><?= $this->Paginator->sort('arrival_date') ?></th>
-                    <!-- <th><?= $this->Paginator->sort('updated_at') ?></th> -->
+                    <!-- <th><?= $this->Paginator->sort('checked in') ?></th> -->
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -46,7 +46,7 @@ use Cake\I18n\FrozenTime;
                     <!-- <td><?= h($inventory->first_name) ?></td>
                     <td><?= h($inventory->last_name) ?></td> -->
                     <td><?= h($inventory->student_number) ?></td>
-                    <td><?= $inventory->has('storageunit') && !empty($inventory->storageunit)? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->cage_name]) : '' ?></td>
+                    <td><?= $inventory->has('storageunit') && !empty($inventory->storageunit)? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
                     <!-- <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td> -->
                     <td><?= h($inventory->description) ?></td>
                     <!-- <td><?= $this->Number->format($inventory->number_of_items) ?></td> -->
