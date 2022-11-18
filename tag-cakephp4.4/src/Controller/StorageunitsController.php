@@ -72,7 +72,7 @@ class StorageunitsController extends AppController
         if ($this->request->is('post')) {
             $postData = $this->request->getData();
             if(isset($postData['checkout']) && $postData['checkout']>0){
-                $InventoryItem = $this->fetchTable('Inventory')->where(['id'=>$postData['checkout']])->first();
+                $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$postData['checkout']])->first();
                 $InventoryItem->checkout_time = FrozenTime::now();
                 $this->fetchTable('Inventory')->save($InventoryItem);
                 $this->Flash->success(__('Item has been checked out.'));
