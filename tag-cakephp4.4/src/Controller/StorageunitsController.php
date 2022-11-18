@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\I18n\FrozenTime;
+
 /**
  * Storageunits Controller
  *
@@ -66,6 +68,17 @@ class StorageunitsController extends AppController
         $storageunit = $this->Storageunits->get($id, [
             'contain' => ['Storagelocations', 'Users', 'Inventory'],
         ]);
+        
+        if ($this->request->is('post')) {
+            $postData = $this->request->getData();
+            if(isset($postData['checkout']) && $postData['checkout']>0){
+                $InventoryItem = $this->fetchTable('Inventory')->where(['id'=>$postData['checkout']])->first();
+                $InventoryItem->checkout_time = FrozenTime::now();
+                $this->fetchTable('Inventory')->save($InventoryItem);
+                $this->Flash->success(__('Item has been checked out.'));
+            }
+            $this->Flash->info(__('Nothing to check out.'));
+        }
 
         $this->set(compact('storageunit'));
     }
