@@ -96,8 +96,7 @@ class InventoryController extends AppController
                     ->setTo('ozmaclaw1@gmail.com')
                     ->setSubject('Confirmation')
                     ->setEmailFormat('html')
-                    ->deliver('This email confirms that you have sucessfully submitted an inventory
-                    form. Please click on the link http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
+                    ->deliver('This email confirms that an inventory form was sucessfully submitted. Please click on the link to access it http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
                         //debug($inventory);
                 
                 //https://book.cakephp.org/4/en/controllers/request-response.html#request-body-data

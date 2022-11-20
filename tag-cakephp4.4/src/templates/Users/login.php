@@ -17,7 +17,7 @@
         </fieldset>
         <div style="text-align: center; margin-top: 20px">
             <?= $this->Form->submit(__('Login')); ?>
-            <?= $this->Html->link("Add User", ['action' => 'add'], ['alert' => __('This feature is temporary and will be removed for production')]) ?>
+            <!-- <?= $this->Html->link("Add User", ['action' => 'add'], ['alert' => __('This feature is temporary and will be removed for production')]) ?> -->
         </div>
         <?= $this->Form->end() ?>
 
