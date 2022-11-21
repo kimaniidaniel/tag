@@ -79,7 +79,9 @@ $qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisI
                             <td><?= h($inventory->arrival_date) ?></td>
                           <!-- <td><?= h($inventory->updated_at) ?></td> -->
                             <td class="actions">
-                            <?=($inventory->checkout_time || empty($inventory->checkout_time))? $this->Form->button(__('Check out'), ['type'=>'submit', 'name'=>'checkout', 'value'=>$inventory->id]) : $inventory->checkout_time ?>    
+                            <!-- <?=($inventory->checkout_time || empty($inventory->checkout_time))? $this->Form->button(__('Check out'), ['type'=>'submit', 'name'=>'checkout', 'value'=>$inventory->id]) : $inventory->checkout_time ?>  -->
+                            <!-- https://book.cakephp.org/4/en/views/helpers/form.html#creating-post-links -->
+                            <?=   $this->Form->postLink(__('Check out'), ['action'=>'checkout', $inventory->id]) ?> 
                             <!-- <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storageunit->id], ['escape' => false]) ?> -->
                             <!-- <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunit->id], ['escape' => false]) ?> -->
                             <!-- <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storageunit->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storageunit->id)]) ?> -->

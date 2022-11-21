@@ -69,20 +69,32 @@ class StorageunitsController extends AppController
             'contain' => ['Storagelocations', 'Users', 'Inventory'],
         ]);
         
-        if ($this->request->is('post')) {
-            $postData = $this->request->getData();
-            if(isset($postData['checkout']) && $postData['checkout']>0){
-                $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$postData['checkout']])->first();
-                $InventoryItem->checkout_time = FrozenTime::now();
-                $this->fetchTable('Inventory')->save($InventoryItem);
-                $this->Flash->success(__('Item has been checked out.'));
-            }
-            $this->Flash->info(__('Nothing to check out.'));
-        }
+        // KD20221121 - Changed to postlink and the checkout function instead
+        // if ($this->request->is('post')) {
+        //     $postData = $this->request->getData();
+        //     if(isset($postData['checkout']) && $postData['checkout']>0){
+        //         $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$postData['checkout']])->first();
+        //         $InventoryItem->checkout_time = FrozenTime::now();
+        //         $this->fetchTable('Inventory')->save($InventoryItem);
+        //         $this->set(compact('storageunit'));
+        //         return $this->Flash->success(__('Item has been checked out.'));
+        //     }
+        //     $this->Flash->info(__('Nothing to check out.'));
+        // }
 
         $this->set(compact('storageunit'));
     }
 
+    public function checkout($id = null){
+        if ($this->request->is('post')) {
+            $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$id])->first();
+            $InventoryItem->checkout_time = FrozenTime::now();
+            $this->fetchTable('Inventory')->save($InventoryItem);
+            $this->Flash->success(__('Item has been checked out.'));
+            return $this->redirect(['action' => 'view', $InventoryItem->storageunit_id]);
+        }
+        $this->Flash->info(__('Nothing to check out.'));
+    }
     /**
      * Add method
      *
