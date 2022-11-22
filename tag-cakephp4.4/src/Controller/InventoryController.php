@@ -94,7 +94,7 @@ class InventoryController extends AppController
                 $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
                     //    ->emailFormat('html')
                     ->setTo('ozmaclaw1@gmail.com')
-                    ->setSubject('Confirmation')
+                    ->setSubject('Submitted')
                     ->setEmailFormat('html')
                     ->deliver('This email confirms that an inventory form was sucessfully submitted. Please click on the link to access it http://localhost/tag/tag-cakephp4.4/inventory/edit/'.$inventory->id);
                         //debug($inventory);

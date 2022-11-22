@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\I18n\FrozenTime;
+use cake\Mailer\Mailer;
 
 /**
  * Storageunits Controller
@@ -91,7 +92,16 @@ class StorageunitsController extends AppController
             $InventoryItem->checkout_time = FrozenTime::now();
             $this->fetchTable('Inventory')->save($InventoryItem);
             $this->Flash->success(__('Item has been checked out.'));
-            return $this->redirect(['action' => 'view', $InventoryItem->storageunit_id]);
+            $Mailer = new Mailer('gmail');
+            $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
+                //    ->emailFormat('html')
+                ->setTo('ozmaclaw1@gmail.com')
+                ->setSubject('Confirmation')
+                ->setEmailFormat('html')
+                ->deliver('This email confirms that your '. $InventoryItem->description.' was checked out');
+            return $this->redirect(['action' => 'index', 
+            $InventoryItem->storageunit_id]);
+           
         }
         $this->Flash->info(__('Nothing to check out.'));
     }
