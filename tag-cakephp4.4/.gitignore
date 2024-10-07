@@ -8,6 +8,7 @@ tag-cakephp4.4/tmp/*
 tag-cakephp4.4/logs/*
 /logs/*
 /vendor/*
+/config/app_local.php
 
 # OS generated files #
 ######################
