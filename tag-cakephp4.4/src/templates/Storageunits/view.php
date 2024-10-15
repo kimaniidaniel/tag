@@ -12,7 +12,7 @@ $thisInventoryItem = $this->Url->build([
     $storageunit->id,
 ], ['fullBase' => true]);
 
-$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
+$qrCodeUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example".$thisInventoryItem ;
 // echo $qrCodeUrl;
 ?>
 <div class="row">
