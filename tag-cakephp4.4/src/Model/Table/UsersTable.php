@@ -41,7 +41,7 @@ class UsersTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('users');
+        $this->setTable('Users');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
@@ -76,11 +76,11 @@ class UsersTable extends Table
             ->requirePresence('last_name', 'create')
             ->notEmptyString('last_name');
 
-        $validator
-            ->scalar('username')
-            ->maxLength('username', 20)
-            ->requirePresence('username', 'create')
-            ->notEmptyString('username');
+        // $validator
+        //     ->scalar('username')
+        //     ->maxLength('username', 20)
+        //     ->requirePresence('username', 'create')
+        //     ->notEmptyString('username');
 
         $validator
             ->scalar('password')
@@ -94,10 +94,10 @@ class UsersTable extends Table
             ->notEmptyString('role');
 
         $validator
-            ->scalar('identifier')
-            ->maxLength('identifier', 20)
-            ->requirePresence('identifier', 'create')
-            ->notEmptyString('identifier');
+            ->scalar('id_number')
+            ->maxLength('id_number', 20)
+            ->requirePresence('id_number', 'create')
+            ->notEmptyString('id_number');
 
         $validator
             ->email('email')
@@ -124,6 +124,7 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['username']), ['errorField' => 'username']);
         $rules->add($rules->isUnique(['email']), ['errorField' => 'email']);
+        $rules->add($rules->isUnique(['id_number']), ['errorField' => 'id_number']);
 
         return $rules;
     }

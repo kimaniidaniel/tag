@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+
 /**
  * Users Controller
  *
@@ -27,8 +28,8 @@ class UsersController extends AppController
                 $conditions = ['OR' => [
                     'Users.first_name like' => '%' . $q . '%',
                     'Users.last_name like' => '%' . $q . '%',
-                    'Users.identifier like' => '%' . $q . '%',
-                    'Users.address like' => '%' . $q . '%',
+                    // 'Users.identifier like' => '%' . $q . '%',
+                    // 'Users.address like' => '%' . $q . '%',
                     'Users.role like' => '%' . $q . '%',
                     'Users.email like' => '%' . $q . '%'
                 ]];
@@ -76,6 +77,8 @@ class UsersController extends AppController
             }
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
+              
+            
 
                 return $this->redirect(['action' => 'index']);
             }
@@ -160,5 +163,9 @@ class UsersController extends AppController
             $this->Authentication->logout();
             return $this->redirect(['controller' => 'Users', 'action' => 'login']);
         }
+    
     }
+
+
+
 }

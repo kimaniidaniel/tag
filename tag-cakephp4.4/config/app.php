@@ -50,7 +50,7 @@ return [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
         'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
-        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'UTC'),
+        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'EST'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -245,6 +245,14 @@ return [
             'tls' => false,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+    //     'gmail' => [
+    //         'host' => 'smtp.gmail.com',
+    //         'port' => 587,
+    //         'username' => 'omclawrence@gmail.com',
+    //         'password' => 'Grenada0209!',
+    //         'className' => 'Smtp',
+    //         'tls' => true
+    // ]
     ],
 
     /*
@@ -257,9 +265,9 @@ return [
      * for more information.
      */
     'Email' => [
-        'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+        'gmail' => [
+            'transport' => 'gmail',
+            'from' => 'omclawrence@gmail.com',
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */
@@ -296,7 +304,7 @@ return [
             'className' => Connection::class,
             'driver' => Mysql::class,
             'persistent' => false,
-            'timezone' => 'UTC',
+            'timezone' =>'UTC',
 
             /*
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6

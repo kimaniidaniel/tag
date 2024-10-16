@@ -4,6 +4,17 @@
  * @var \App\Model\Entity\Inventory $inventory
  */
 ?>
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisInventoryItem = $this->Url->build([
+    'controller' => 'Inventory',
+    'action' => 'view',
+    $inventory->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example".$thisInventoryItem ;
+// echo $qrCodeUrl;
+?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -16,39 +27,45 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="inventory view content">
-            <h3><?= h($inventory->name) ?></h3>
+            <h3 style="text-align: center;"><?= h($inventory->name) ?></h3>
+            <div style="text-align: center;"><img src="<?=$qrCodeUrl?>"></div>
+             <!-- <button>Download QR code</button> -->
             <table>
                 <tr>
-                    <th><?= __('Name') ?></th>
-                    <td><?= h($inventory->name) ?></td>
+                    <th><?= __(' Name') ?></th>
+                    <td><?= h($inventory->student_name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Storageunit') ?></th>
-                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->id]) : '' ?></td>
+                    <th><?= __('Storage Unit') ?></th>
+                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->cage_name]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('User') ?></th>
-                    <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->id, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
+                <th><?= __('User') ?></th>
+                <td><?= $inventory->has('user') ? $this->Html->link($inventory->user->first_name . " " . $inventory->user->last_name, ['controller' => 'Users', 'action' => 'view', $inventory->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Description') ?></th>
                     <td><?= h($inventory->description) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($inventory->id) ?></td>
+                    <!-- <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($inventory->id) ?></td> -->
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><?= __('Number Of Items') ?></th>
                     <td><?= $this->Number->format($inventory->number_of_items) ?></td>
+                </tr> -->
+                <tr>
+                <th><?= __('Timeslot') ?></th>
+                    <td><?= h($inventory->timeslot) ?></td>
                 </tr>
                 <tr>
                 <th><?= __('Departure Date') ?></th>
                     <td><?= h($inventory->departure_date) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Departure Date') ?></th>
-                    <td><?= h($inventory->departure_date) ?></td>
+                <th><?= __('Arrival Date') ?></th>
+                    <td><?= h($inventory->arrival_date) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>

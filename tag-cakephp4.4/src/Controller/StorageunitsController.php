@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\I18n\FrozenTime;
+use cake\Mailer\Mailer;
+
 /**
  * Storageunits Controller
  *
@@ -29,18 +32,18 @@ class StorageunitsController extends AppController
             $q = $this->request->getData()['query']; // get search query sent in from form
             if(!empty($q)) {
                 $conditions = ['OR'=>[
-                    'Users.first_name like'=>'%'.$q.'%',
-                    'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
-                    'Users.address like'=>'%'.$q.'%',
+                    // 'Users.first_name like'=>'%'.$q.'%',
+                    // 'Users.last_name like'=>'%'.$q.'%',
+                    // 'Users.identifier like'=>'%'.$q.'%',
+                    // 'Users.address like'=>'%'.$q.'%',
                    // 'Users.unit like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%',
-                    'Storagelocations.name like'=>'%'.$q.'%',
-                    'Storagelocations.address like'=>'%'.$q.'%',
-                    'Storagelocations.description like'=>'%'.$q.'%',
-                    'Storageunits.name like'=>'%'.$q.'%',
-                    'Storageunits.identifier like'=>'%'.$q.'%',
+                    // 'Users.email like'=>'%'.$q.'%',
+                    // 'Users.role like'=>'%'.$q.'%',
+                    // 'Storagelocations.storagelocation_id like'=>'%'.$q.'%',
+                    // 'Storagelocations.address like'=>'%'.$q.'%',
+                    // 'Storagelocations.description like'=>'%'.$q.'%',
+                    'Storageunits.cage_name like'=>'%'.$q.'%',
+                    // 'Storageunits.identifier like'=>'%'.$q.'%',
                 ]];
 
                 $storageunits = $this->paginate($this->Storageunits->find('all',['conditions'=> $conditions ]));
@@ -66,10 +69,42 @@ class StorageunitsController extends AppController
         $storageunit = $this->Storageunits->get($id, [
             'contain' => ['Storagelocations', 'Users', 'Inventory'],
         ]);
+        
+        // KD20221121 - Changed to postlink and the checkout function instead
+        // if ($this->request->is('post')) {
+        //     $postData = $this->request->getData();
+        //     if(isset($postData['checkout']) && $postData['checkout']>0){
+        //         $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$postData['checkout']])->first();
+        //         $InventoryItem->checkout_time = FrozenTime::now();
+        //         $this->fetchTable('Inventory')->save($InventoryItem);
+        //         $this->set(compact('storageunit'));
+        //         return $this->Flash->success(__('Item has been checked out.'));
+        //     }
+        //     $this->Flash->info(__('Nothing to check out.'));
+        // }
 
         $this->set(compact('storageunit'));
     }
 
+    public function checkout($id = null){
+        if ($this->request->is('post')) {
+            $InventoryItem = $this->fetchTable('Inventory')->find()->where(['id'=>$id])->first();
+            $InventoryItem->checkout_time = FrozenTime::now();
+            $this->fetchTable('Inventory')->save($InventoryItem);
+            $this->Flash->success(__('Item has been checked out.'));
+            $Mailer = new Mailer('gmail');
+            $Mailer->setFrom(['ozmaclaw1@gmail.com' => 'TagandStore1.0'])
+                //    ->emailFormat('html')
+                ->setTo('ozmaclaw1@gmail.com')
+                ->setSubject('Confirmation')
+                ->setEmailFormat('html')
+                ->deliver('This email confirms that your '. $InventoryItem->description.' was checked out');
+            return $this->redirect(['action' => 'index', 
+            $InventoryItem->storageunit_id]);
+           
+        }
+        $this->Flash->info(__('Nothing to check out.'));
+    }
     /**
      * Add method
      *
@@ -86,7 +121,8 @@ class StorageunitsController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The storageunit could not be saved. Please, try again.'));
-        } //debug($storageunit);
+        debug($storageunit);
+        }
         $storagelocations = $this->Storageunits->Storagelocations->find('list', ['limit' => 200])->all();
         // $users = $this->Storageunits->Users->find('list', ['limit' => 200])->all();
         $users = $this->Storageunits->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){

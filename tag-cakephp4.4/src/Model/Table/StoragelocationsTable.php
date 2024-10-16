@@ -40,7 +40,7 @@ class StoragelocationsTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('storagelocations');
+        $this->setTable('Storagelocations');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
@@ -74,11 +74,11 @@ class StoragelocationsTable extends Table
             ->notEmptyString('name')
             ->add('name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
-        $validator
-            ->scalar('address')
-            ->maxLength('address', 50)
-            ->requirePresence('address', 'create')
-            ->notEmptyString('address');
+        // $validator
+        //     ->scalar('address')
+        //     ->maxLength('address', 50)
+        //     ->requirePresence('address', 'create')
+        //     ->notEmptyString('address');
 
         // $validator
         //     ->scalar('description')

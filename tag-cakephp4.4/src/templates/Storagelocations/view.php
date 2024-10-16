@@ -4,6 +4,7 @@
  * @var \App\Model\Entity\Storagelocation $storagelocation
  */
 ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -20,58 +21,58 @@
             <table>
                 <tr>
                     <th><?= __('User') ?></th>
-                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->id, ['controller' => 'Users', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
+                    <td><?= $storagelocation->has('user') ? $this->Html->link($storagelocation->user->first_name . " " . $storagelocation->user->last_name, ['controller' => 'user', 'action' => 'view', $storagelocation->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Name') ?></th>
                     <td><?= h($storagelocation->name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Address') ?></th>
-                    <td><?= h($storagelocation->address) ?></td>
+                    <!-- <th><?= __('Address') ?></th>
+                    <td><?= h($storagelocation->address) ?></td> -->
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($storagelocation->id) ?></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th><?= __('Updated At') ?></th>
                     <td><?= h($storagelocation->updated_at) ?></td>
                 </tr>
             </table>
-            <div class="text">
+            <!-- <div class="text">
                 <strong><?= __('Description') ?></strong>
                 <blockquote>
                     <?= $this->Text->autoParagraph(h($storagelocation->description)); ?>
                 </blockquote>
-            </div>
+            </div> -->
             <div class="related">
                 <h4><?= __('Related Storageunits') ?></h4>
                 <?php if (!empty($storagelocation->storageunits)) : ?>
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
-                            <th><?= __('Storagelocation Id') ?></th>
+                            <!-- <th><?= __('Id') ?></th>
+                            <th><?= __('Storagelocation Id') ?></th> -->
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Identifier') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <!-- <th><?= __('Id_number') ?></th> -->
+                            <th><?= __('User') ?></th>
                             <th><?= __('Updated At') ?></th>
-                            <th class="actions"><?= __('Actions') ?></th>
+                            <!-- <th class="actions"><?= __('Actions') ?></th> -->
                         </tr>
                         <?php foreach ($storagelocation->storageunits as $storageunits) : ?>
                         <tr>
-                            <td><?= h($storageunits->id) ?></td>
-                            <td><?= h($storageunits->storagelocation_id) ?></td>
-                            <td><?= h($storageunits->name) ?></td>
-                            <td><?= h($storageunits->identifier) ?></td>
+                            <!-- <td><?= h($storageunits->id) ?></td>
+                            <td><?= h($storageunits->storagelocation_id) ?></td> -->
+                            <td><?= h($storageunits->cage_name) ?></td>
+                            <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
-                            <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Storageunits', 'action' => 'view', $storageunits->id]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Storageunits', 'action' => 'edit', $storageunits->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Storageunits', 'action' => 'delete', $storageunits->id], ['confirm' => __('Are you sure you want to delete # {0}?', $storageunits->id)]) ?>
-                            </td>
+                            <!-- <td class="actions">
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storagelocation->id], ['escape' => false]) ?>
+                            <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storagelocation->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storagelocation->id)]) ?>
+                            </td> -->
                         </tr>
                         <?php endforeach; ?>
                     </table>

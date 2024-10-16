@@ -4,6 +4,17 @@
  * @var \App\Model\Entity\Storageunit $storageunit
  */
 ?>
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisInventoryItem = $this->Url->build([
+    'controller' => 'Storageunits',
+    'action' => 'view',
+    $storageunit->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example".$thisInventoryItem ;
+// echo $qrCodeUrl;
+?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -16,23 +27,25 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="storageunits view content">
-            <h3><?= h($storageunit->name) ?> (<?= $this->Number->format($storageunit->id) ?>)</h3>
+            <h3 style="text-align: center;"><?= h($storageunit->name) ?></h3>
+            <div style="text-align: center;"><img src="<?=$qrCodeUrl?>"></div>
+            <!-- <button>Download QR code</button> -->
             <table>
                 <tr>
                     <th><?= __('Storagelocation') ?></th>
                     <td><?= $storageunit->has('storagelocation') ? $this->Html->link($storageunit->storagelocation->name, ['controller' => 'Storagelocations', 'action' => 'view', $storageunit->storagelocation->id]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Name') ?></th>
-                    <td><?= h($storageunit->name) ?></td>
+                    <th><?= __(' Storage Unit') ?></th>
+                    <td><?= h($storageunit->cage_name) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Identifier') ?></th>
-                    <td><?= h($storageunit->identifier) ?></td>
+                    <!-- <th><?= __('id_number') ?></th>
+                    <td><?= h($storageunit->id_number) ?></td> -->
                 </tr>
                 <tr>
-                    <th><?= __('User') ?></th>
-                    <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->id, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
+                <th><?= __('User') ?></th>
+                <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Updated At') ?></th>
@@ -45,30 +58,33 @@
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
-                            <th><?= __('Storageunit Id') ?></th>
-                            <th><?= __('User Id') ?></th>
+                            <th><?= __('Student Name') ?></th>
+                            <!-- <th><?= __('Storageunit Id') ?></th> -->
+                            <th><?= __('User') ?></th>
                             <th><?= __('Description') ?></th>
-                            <th><?= __('Number Of Items') ?></th>
-                            <th><?= __('Arival Date') ?></th>
+                            <!-- <th><?= __('Number Of Items') ?></th> -->
                             <th><?= __('Departure Date') ?></th>
-                            <th><?= __('Updated At') ?></th>
+                            <th><?= __('Arrival Date') ?></th>
+                            <!-- <th><?= __('Updated At') ?></th> -->
                             <th class="actions"><?= __('Actions') ?></th>
                         </tr>
                         <?php foreach ($storageunit->inventory as $inventory) : ?>
                         <tr>
-                            <td><?= h($inventory->id) ?></td>
-                            <td><?= h($inventory->storageunit_id) ?></td>
-                            <td><?= h($inventory->user_id) ?></td>
+                            <td><?= h($inventory->student_name) ?></td>
+                            <!-- <td><?= h($inventory->storageunit_id) ?></td> -->
+                            <td><?= $storageunit->has('user') ? $this->Html->link($storageunit->user->first_name . " " . $storageunit->user->last_name, ['controller' => 'Users', 'action' => 'view', $storageunit->user->id]) : '' ?></td>
                             <td><?= h($inventory->description) ?></td>
-                            <td><?= h($inventory->number_of_items) ?></td>
-                            <td><?= h($inventory->arival_date) ?></td>
+                            <!-- <td><?= h($inventory->number_of_items) ?></td> -->
                             <td><?= h($inventory->departure_date) ?></td>
-                            <td><?= h($inventory->updated_at) ?></td>
+                            <td><?= h($inventory->arrival_date) ?></td>
+                          <!-- <td><?= h($inventory->updated_at) ?></td> -->
                             <td class="actions">
-                                <?= $this->Html->link(__('View'), ['controller' => 'Inventory', 'action' => 'view', $inventory->ItemID]) ?>
-                                <?= $this->Html->link(__('Edit'), ['controller' => 'Inventory', 'action' => 'edit', $inventory->ItemID]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Inventory', 'action' => 'delete', $inventory->ItemID], ['confirm' => __('Are you sure you want to delete # {0}?', $inventory->ItemID)]) ?>
+                            <!-- <?=($inventory->checkout_time || empty($inventory->checkout_time))? $this->Form->button(__('Check out'), ['type'=>'submit', 'name'=>'checkout', 'value'=>$inventory->id]) : $inventory->checkout_time ?>  -->
+                            <!-- https://book.cakephp.org/4/en/views/helpers/form.html#creating-post-links -->
+                            <?=   $this->Form->postLink(__('Check out'), ['action'=>'checkout', $inventory->id]) ?> 
+                            <!-- <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'View item', 'class' => 'fa-solid fa-eye')), ['action' => 'view', $storageunit->id], ['escape' => false]) ?> -->
+                            <!-- <?= $this->Html->link($this->Html->tag('i', '', array('title'=>'Edit item', 'class' => 'fa fa-pencil')), ['action' => 'edit', $storageunit->id], ['escape' => false]) ?> -->
+                            <!-- <?= $this->Form->postLink($this->Html->tag('i', '', array('title'=>'Delete item', 'class' => 'fa fa-trash')), ['action' => 'delete', $storageunit->id], ['escape' => false, 'confirm' => __('Are you sure you want to delete # {0}?', $storageunit->id)]) ?> -->
                             </td>
                         </tr>
                         <?php endforeach; ?>

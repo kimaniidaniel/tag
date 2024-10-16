@@ -15,7 +15,7 @@ use Authentication\PasswordHasher\DefaultPasswordHasher; // Add this line
  * @property string $username
  * @property string $password
  * @property string $role
- * @property string $identifier
+ * @property string $id_number
  * @property string $email
  * @property string $address
  *
@@ -40,7 +40,7 @@ class User extends Entity
         // 'username' => true,
         'password' => true,
         'role' => true,
-        'identifier' => true,
+        'id_number' => true,
         'email' => true,
         'address' => true,
         'inventory' => true,

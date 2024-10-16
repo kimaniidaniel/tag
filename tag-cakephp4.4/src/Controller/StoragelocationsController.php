@@ -31,11 +31,11 @@ class StoragelocationsController extends AppController
                 $conditions = ['OR'=>[
                     'Users.first_name like'=>'%'.$q.'%',
                     'Users.last_name like'=>'%'.$q.'%',
-                    'Users.identifier like'=>'%'.$q.'%',
-                    'Users.address like'=>'%'.$q.'%',
+                    // 'Users.identifier like'=>'%'.$q.'%',
+                    // 'Users.address like'=>'%'.$q.'%',
                     //'Users.unit like'=>'%'.$q.'%',
-                    'Users.email like'=>'%'.$q.'%',
-                    'Users.role like'=>'%'.$q.'%',
+                    // 'Users.email like'=>'%'.$q.'%',
+                    // 'Users.role like'=>'%'.$q.'%',
                     'Storagelocations.name like'=>'%'.$q.'%',
                     'Storagelocations.address like'=>'%'.$q.'%',
                     // 'Storagelocations.description like'=>'%'.$q.'%',
@@ -86,7 +86,7 @@ class StoragelocationsController extends AppController
             }
             $this->Flash->error(__('The storagelocation could not be saved. Please, try again.'));
         } 
-            //debug($storagelocation);
+            // debug($storagelocation);
         $users = $this->Storagelocations->Users->find('list', ['limit' => 200])->all();
         $users = $this->Storagelocations->Users->find()->select(['id','first_name','last_name'])->map(function($value, $key){
             return [

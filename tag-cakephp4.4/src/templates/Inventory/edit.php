@@ -6,6 +6,17 @@
  * @var string[]|\Cake\Collection\CollectionInterface $users
  */
 ?>
+<?php
+//https://book.cakephp.org/4/en/views/helpers/url.html
+$thisInventoryItem = $this->Url->build([
+    'controller' => 'Inventory',
+    'action' => 'edit',
+    $inventory->id,
+], ['fullBase' => true]);
+
+$qrCodeUrl = "https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=".$thisInventoryItem ;
+// echo $qrCodeUrl;
+?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -20,21 +31,28 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="inventory form content">
+        <!-- <div style="float: right;"><img src="<?=$qrCodeUrl?>"></div> -->
             <?= $this->Form->create($inventory) ?>
             <fieldset>
                 <legend><?= __('Edit Inventory') ?></legend>
                 <?php
-                    echo $this->Form->control('name');
-                    echo $this->Form->control('storageunit_id', ['options' => $storageunits]);
-                    echo $this->Form->control('user', ['options' => $users]);
+                    echo $this->Form->control('student_name');
+                    echo $this->Form->control('user_id');
                     echo $this->Form->control('description');
-                    echo $this->Form->control('number_of_items');
-                    echo $this->Form->control('arival_date');
+                    // echo $this->Form->control('number_of_items');
+                    // echo $this->Form->control('cage_name');
+                    echo $this->Form->control('storageunit_id', ['options'=>$storageUnits]);
+                    echo $this->Form->control('timeslot');
                     echo $this->Form->control('departure_date');
+                    echo $this->Form->control('arrival_date');
                     echo $this->Form->control('updated_at');
+                
                 ?>
             </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
+            <!-- <div style="text-align: center;"/> -->
+                <!-- <?= $this->Form->button(__('checked in'), ['type'=>'check in', 'name'=>'check in']) ?> -->
+                <?= $this->Form->button(__('Submit'), ['type'=>'submit', 'name'=>'submit']) ?>
+            
             <?= $this->Form->end() ?>
         </div>
     </div>
