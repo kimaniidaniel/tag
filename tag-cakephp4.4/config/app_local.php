@@ -88,7 +88,7 @@ return [
             'host' => 'smtp.gmail.com',
             'port' => 587,
             'username' => 'ozmaclaw1@gmail.com',
-            'password' => 'ffzaxtusazoxpkqj',
+            'password' => 'Grenada0209???',
             'tls' => true
         ],
         // Sample SMTP configuration
@@ -96,7 +96,7 @@ return [
             'host' => 'smtp.gmail.com',
             'port' => 587,
             'username' => 'ozmaclaw1@gmail.com',
-            'password' => 'ffzaxtusazoxpkqj',
+            'password' => 'Grenada0209???',
             'className' => 'Smtp',
             'tls' => true
         ]
