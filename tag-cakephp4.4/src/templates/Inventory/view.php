@@ -37,7 +37,7 @@ $qrCodeUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Exam
                 </tr>
                 <tr>
                     <th><?= __('Storage Unit') ?></th>
-                    <td><?= $inventory->has('storageunit') ? $this->Html->link($inventory->storageunit->cage_name, ['controller' => 'Storageunits', 'action' => 'view', $inventory->storageunit->cage_name]) : '' ?></td>
+                    <td><?= h($inventory->storageunit->cage_name) ?></td>
                 </tr>
                 <tr>
                 <th><?= __('User') ?></th>
