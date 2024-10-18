@@ -267,7 +267,7 @@ return [
     'Email' => [
         'gmail' => [
             'transport' => 'gmail',
-            'from' => 'ozmaclaw1@gmail.com',
+            'from' => 'omclawrence@gmail.com',
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */
