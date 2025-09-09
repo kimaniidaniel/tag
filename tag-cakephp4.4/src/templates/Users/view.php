@@ -35,7 +35,7 @@
                     <td><?= h($user->role) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('id_number') ?></th>
+                    <th><?= __('Id number') ?></th>
                     <td><?= h($user->id_number) ?></td>
                 </tr>
                 <tr>
@@ -47,7 +47,7 @@
                     <td><?= h($user->address) ?></td>
                 </tr> -->
                 <tr>
-                    <th><?= __('Id') ?></th>
+                    <th><?= __('User Id') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
                 </tr>
             </table>
@@ -141,7 +141,7 @@
                         <tr>
                             <!-- <td><?= h($storageunits->id) ?></td> -->
                             <!-- <td><?= h($storageunits->storagelocation_id) ?></td> -->
-                            <td><?= h($storageunits->name) ?></td>
+                            <td><?= h($storagelocations->name) ?></td>
                             <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>

@@ -32,7 +32,7 @@
                     <td><?= h($storagelocation->address) ?></td> -->
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
+                    <th><?= __('Storage location Id') ?></th>
                     <td><?= $this->Number->format($storagelocation->id) ?></td>
                 </tr>
                 <tr>
@@ -55,7 +55,7 @@
                             <th><?= __('Id') ?></th>
                             <th><?= __('Storagelocation Id') ?></th>
                             <th><?= __('Name') ?></th>
-                            <th><?= __('Id_number') ?></th>
+                            <th><?= __('Id number') ?></th>
                             <th><?= __('User Id') ?></th>
                             <th><?= __('Updated At') ?></th>
                             <th class="actions"><?= __('Actions') ?></th>
