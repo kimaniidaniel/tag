@@ -141,7 +141,7 @@
                         <tr>
                             <!-- <td><?= h($storageunits->id) ?></td> -->
                             <!-- <td><?= h($storageunits->storagelocation_id) ?></td> -->
-                            <td><?= h($storagelocations->name) ?></td>
+                            <td><?= h($storageunits->id) ?></td>
                             <!-- <td><?= h($storageunits->id_number) ?></td> -->
                             <td><?= h($storageunits->user_id) ?></td>
                             <td><?= h($storageunits->updated_at) ?></td>
